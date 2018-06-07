@@ -10,8 +10,8 @@ version = "0.8.0"
 # === GLOBAL cf.CONSTANTS ===========================================
 FPS = 60
 FRAMERATE = 1000//FPS
-TILEY = 10
-TILEX = 15
+TILEY = 20
+TILEX = 30
 TILEWIDTH = 16
 TILEHEIGHT = 16
 WINWIDTH = TILEWIDTH * TILEX
