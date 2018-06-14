@@ -1,7 +1,130 @@
-# Event script that is called every time the player's turn starts. Normally handles reinforcements
-if;gameStateObj.turncount == 4
-    set_cursor;0,0;force_hold
+# Turn Change Script
+if;gameStateObj.turncount == 1
+    move_unit;Kalin;16,13
+    start_move
+    u;Kalin;Left
+    s;Kalin;Face the fury of my lance!
+    r;Kalin
+    interact_unit;Kalin;17,13;Miss
+    # Young Noah and Kalin talking
+    s;Kalin;45!
+    s;Noah;Miss.
+    s;Kalin;Wha-?
+    s;Noah;eah, turns out having crappy accuracy leads to a lot of misses.
+    s;Kalin;Dangit!
+    # Regular Chars
+    u;Noah;Left;u;Kalin;Right
+    s;Kalin;Wha... Why couldn't I hi-
+    s;Noah;No no no!{w}{br}I am not about to give a freaking tutorial on the weapon triangle.{w}{br}Go stake that myrmidon over there.
+    r;Kalin;Noah
+    set_cursor;13,19
+    disp_cursor;1
+    wait;1000
+    disp_cursor;0
+# First reinforcements appear
+elif;gameStateObj.turncount == 4
+    set_cursor;17,15
+    wait;200
+    add_unit;pack1_1
+    add_unit;pack1_2
+    add_unit;pack1_3
     wait;500
-	change_tile_sprite;0,0;Door
-    wait;2000
+    set_cursor;5,0
+    wait;200
+    add_unit;pack1_4
+    add_unit;pack1_5
+    add_unit;pack1_6
+    wait;500
+elif;gameStateObj.turncount == 5
+    set_cursor;17,15
+    wait;200
+    add_unit;pack2_1
+    add_unit;pack2_2
+    add_unit;pack2_3
+    wait;500
+    set_cursor;5,0
+    wait;200
+    add_unit;pack2_4
+    add_unit;pack2_5
+    add_unit;pack2_6
+    wait;500
+elif;gameStateObj.turncount == 6
+    set_cursor;17,15
+    wait;200
+    add_unit;pack3_1
+    add_unit;pack3_2
+    add_unit;pack3_3
+    wait;500
+    set_cursor;5,0
+    wait;200
+    add_unit;pack3_4
+    add_unit;pack3_5
+    add_unit;pack3_6
+    wait;500
+elif;gameStateObj.turncount == 7
+    set_cursor;17,15
+    wait;200
+    add_unit;pack4_1
+    add_unit;pack4_2
+    add_unit;pack4_3
+    wait;500
+    set_cursor;5,0
+    wait;200
+    add_unit;pack4_4
+    add_unit;pack4_5
+    add_unit;pack4_6
+    wait;500
+elif;gameStateObj.turncount == 8
+    set_cursor;17,15
+    wait;200
+    add_unit;pack5_1
+    add_unit;pack5_2
+    add_unit;pack5_3
+    wait;500
+    set_cursor;5,0
+    wait;200
+    add_unit;pack5_4
+    add_unit;pack5_5
+    add_unit;pack5_6
+    wait;500
+elif;gameStateObj.turncount == 9
+    set_cursor;17,15
+    wait;200
+    add_unit;pack6_1
+    add_unit;pack6_2
+    add_unit;pack6_3
+    wait;500
+    set_cursor;5,0
+    wait;200
+    add_unit;pack6_4
+    add_unit;pack6_5
+    add_unit;pack6_6
+    wait;500
+# Not decided on turncount yet for this
+if;gameStateObj.turncount == 7
+    set_cursor;position
+    wait;200
+    add_unit;enemy_general
+    wait;500
+    u;Enemy General;Right
+    s;Enemy General;Fee Fi Foe Fum! Who goes there!?{w}{br}You will be in trouble for disturbing my slumber! 
+    r;Enemy General
+    s;Noah;Amazing acting, Kalin, but might I remind you that the general is a human being, not a troll under a bridge.
+    s;Kalin;First off, it's a giant on top of a cloud.{w}{br}Second off:
+    u;Enemy General;Right
+    s;Enemy General;I will start with you, silly lord!{w}{br}For mocking me, the price is death!
+    r;Enemy General
+end
+if;'BossDead' in gameStateObj.level_constants
+    inc_counter;BossDead
+    if;gameStateObj.level_constants['BossDead'] >= 3
+        s;Kalin;Seriously, Noah?
+        s;YNoah;W-What?
+        s;YKalin;Having our character grind on reinforcements? Really?
+        s;YNoah;Yeah, it's efficient.
+        s;YKalin;Weren't you the one saying you wanted this to be realistic?
+        s;YNoah;Well actua-
+        s;YKalin;No no no! I'm not hearing it. This map is over.
+        win_game
+    end
 end

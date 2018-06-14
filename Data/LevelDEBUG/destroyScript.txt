@@ -1,7 +1,17 @@
-if;self.name == '1'
-    set_cursor;0,0;force_hold
-    wait;500
-    change_tile_sprite;0,0;Door;destroy
-    wait;2000
-    wait;500
+# Destroy Script
+if;self.name == 'Arundel'
+    s;Noah;Wait what? How did that happen?
+    s;Kalin;They started so far away!
+    s;Noah;We must never speak of this.
+    s;Kalin;Agreed.
+else
+    inc_level_constant;VillagesDestroyed
+    if;gameStateObj.level_constants['VillagesDestroyed'] == 1
+        s;Kalin;Noah, what are you doing?{w}{br}Two more and we fail!
+    elif;gameStateObj.level_constants['VillagesDestroyed'] == 2
+        s;Kalin;One more...
+    elif;gameStateObj.level_constants['VillagesDestroyed'] >= 3
+        s;Noah;Well that just happened...
+        lose_game
+    end
 end

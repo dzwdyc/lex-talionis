@@ -723,7 +723,7 @@
         <id>Willow Bow</id>
         <spritetype>Bow</spritetype>
         <spriteid>0</spriteid>       
-        <components>weapon,uses,weight</components>
+        <components>weapon,uses,weight,effective</components>
         <weapontype>Bow</weapontype>
  
         <uses>45</uses>
@@ -735,6 +735,8 @@
 		<MT>4</MT>
 		<HIT>85</HIT>
 		<LVL>D</LVL>
+
+        <effective>Flying;8</effective>
     </item>
 
     <item name="Oak Bow">
