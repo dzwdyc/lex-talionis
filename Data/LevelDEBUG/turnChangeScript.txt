@@ -5,12 +5,12 @@ if;gameStateObj.turncount == 1
     u;Kalin;Left
     s;Kalin;Face the fury of my lance!
     r;Kalin
-    interact_unit;Kalin;17,13;Miss
     # Young Noah and Kalin talking
     s;Kalin;45!
+    interact_unit;Kalin;17,13;Miss,Hit
     s;Noah;Miss.
     s;Kalin;Wha-?
-    s;Noah;eah, turns out having crappy accuracy leads to a lot of misses.
+    s;Noah;Yeah, turns out having crappy accuracy leads to a lot of misses.
     s;Kalin;Dangit!
     # Regular Chars
     u;Noah;Left;u;Kalin;Right

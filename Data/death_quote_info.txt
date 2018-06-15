@@ -26,12 +26,12 @@ elif;self.unit.name == 'Kalin'
 	s;Narrator;And on that day, Arundel exploded.{w};auto;narration
 	s;Noah;Wha-
 	lose_game
-elif;self.unit.team == 'player' and self.gameStateObj.game_constants['level'] == 0 and not 'GenericDies' in gameStateObj.level_constants
+elif;self.unit.team == 'player' and 'GenericDies' not in gameStateObj.game_constants
 	s;Kalin;No! Nameless Blue Unit!{w}{br}You were the chosen one!
 	s;Noah;Oh calm down, drama queen.
 	s;Kalin;Bu-
 	s;Noah;DRAMA QUEEN!
-	set_level_constant;GenericDies
+	set_game_constant;GenericDies
 # Boss Death Quotes
 elif;self.unit.name == 'Anders'
 	set_level_constant;BossDead

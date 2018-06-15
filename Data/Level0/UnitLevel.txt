@@ -1,3 +1,4 @@
+
 # UnitLevel.txt is used to define what units will be part of this level and where they will spawn
 # 
 # Each unit belongs on its own line
@@ -5,7 +6,7 @@
 # New Units:
 # team; 0; event_id; class; level; items; position; ai; faction; status (optional)
 # - OR -
-# Saved units:
+# Named units:
 # team; 1; event_id; unit_id; position; ai
 # - OR -
 # Created Units:
@@ -17,36 +18,76 @@
 # ai refers to what kind of AI the unit should possess.
 #
 # --------------------------------------------
+faction;Arundel;Arundel;Knight;A soldier of Arundel
+faction;Byrak;Byrak;Bandit;A soldier of Byrak
 # Player Characters
-player;0;Ophie;Ophie;9,9;None
-player;0;Prim;Prim;10,9;None
-player;0;Yohn;Yohn;8,9;None
-#
+player;0;0;Noah;9,13;None
+player;0;0;Kalin;8,13;None
+player;0;0;Knight;1;Iron Lance;9,10;None;Arundel
+player;0;0;Thief;1;Iron Sword;10,11;None;Arundel
+player;0;0;Cleric;1;Glimmer,Heal;8,11;None;Arundel
+player;0;0;Archer;1;Willow Bow;9,12;None;Arundel
 # Enemies
-# Named
-enemy;0;0;Vagnius;19,5;DoNothing
-enemy;0;0;Sidney;18,4;DoNothing
-# Generics (already on field)
-# Factions
-faction;Soldier;Soldier;Empire;An imperial soldier
-faction;Monk;Monk;Neutral;A monk at this monastery
-#
-# Vagnius's soldiers
-enemy;0;S1;Soldier;f7;Iron Lance;18,5;SoftGuard;Soldier
-enemy;0;S2;Soldier;f7;Iron Lance;19,6;SoftGuard;Soldier
-enemy;0;S3;Soldier;f7;Iron Lance;19,4;SoftGuard;Soldier
-# Sidney's thugs
-enemy;0;F1;Fighter;f1;Hatchet;19,3;SoftGuard;Soldier
-enemy;0;F2;Fighter;f1;Hatchet;18,3;SoftGuard;Soldier
-# First enemy
-enemy;0;E1;Fighter;f1;eIron Axe;0,0;Pursue;Soldier;Maximum HP -5
-# Second enemies
-enemy;0;E2;Soldier;f1;eSlim Lance;0,0;Pursue;Soldier
-#
-# Citizens
-other;0;0;CitizenF;1;;12,5;DoNothing;Monk
-other;0;0;Citizen;1;;13,4;DoNothing;Monk
-other;0;0;CitizenF;1;;13,3;DoNothing;Monk
-other;0;0;CitizenF;1;;14,4;DoNothing;Monk
-other;0;0;Citizen;1;;15,5;DoNothing;Monk
-other;0;0;Citizen;5;;15,3;DoNothing;Monk
+# Generics
+enemy;0;0;Archer;1;Willow Bow;17,4;Attack;Byrak
+enemy;0;0;Archer;1;Willow Bow;13,2;Attack;Byrak
+enemy;0;0;Archer;1;Willow Bow;7,0;Attack;Byrak
+enemy;0;0;Archer;1;Willow Bow;2,12;SoftGuard;Byrak
+enemy;0;0;Archer;1;Willow Bow;5,20;Attack;Byrak
+enemy;0;0;Archer;1;Willow Bow;13,17;SoftGuard;Byrak
+enemy;0;0;Archer;1;Willow Bow;16,2;SoftGuard;Byrak
+enemy;0;0;Myrmidon;1;Iron Sword;5,0;Attack;Byrak
+enemy;0;0;Myrmidon;1;Iron Sword;5,3;SoftGuard;Byrak
+enemy;0;0;Myrmidon;1;Iron Sword;4,13;Attack;Byrak
+enemy;0;0;Myrmidon;1;Iron Sword;4,16;Attack;Byrak
+enemy;0;0;Myrmidon;1;Iron Sword;2,20;SoftGuard;Byrak
+enemy;0;0;Myrmidon;1;Iron Sword;13,19;Attack;Byrak
+enemy;0;0;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
+enemy;0;0;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
+enemy;0;0;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
+# === Reinforcements ===
+# Player Characters
+# Enemies
+# Generics
+enemy;0;pack1_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
+enemy;0;pack1_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
+enemy;0;pack1_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
+enemy;0;pack1_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
+enemy;0;pack1_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
+enemy;0;pack1_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
+enemy;0;pack2_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
+enemy;0;pack2_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
+enemy;0;pack2_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
+enemy;0;pack2_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
+enemy;0;pack2_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
+enemy;0;pack2_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
+enemy;0;pack3_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
+enemy;0;pack3_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
+enemy;0;pack3_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
+enemy;0;pack3_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
+enemy;0;pack3_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
+enemy;0;pack3_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
+enemy;0;pack4_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
+enemy;0;pack4_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
+enemy;0;pack4_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
+enemy;0;pack4_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
+enemy;0;pack4_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
+enemy;0;pack4_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
+enemy;0;pack5_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
+enemy;0;pack5_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
+enemy;0;pack5_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
+enemy;0;pack5_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
+enemy;0;pack5_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
+enemy;0;pack5_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
+enemy;0;pack6_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
+enemy;0;pack6_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
+enemy;0;pack6_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
+enemy;0;pack6_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
+enemy;0;pack6_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
+enemy;0;pack6_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
+# === Triggers ===
+trigger;PlayerSpawn;8,11;9,10;8,11
+trigger;PlayerSpawn;10,11;9,10;10,11
+trigger;PlayerSpawn;Noah;9,10;9,13
+trigger;PlayerSpawn;9,12;9,10;9,12
+trigger;PlayerSpawn;Kalin;9,10;8,13

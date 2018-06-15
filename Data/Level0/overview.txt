@@ -3,11 +3,9 @@ prep_flag;0
 pick_flag;0
 base_flag;0
 market_flag;0
-transition_flag;0
-display_name;Escape!
-win_condition;Escape the monastery
-loss_condition;Ophie dies,OR,Prim dies
-player_phase_music;Flight over Venice
-enemy_phase_music;Brave Story 12
-other_phase_music;Brave Story 12
-weather;Light
+transition_flag;1
+display_name;Secure Villages
+win_condition;Secure at least 3 Villages
+loss_condition;Noah dies,OR,Arundel Castle is seized,OR,3 Villages are destroyed
+player_phase_music;Distant Roads
+enemy_phase_music;Shadow of the Enemy

@@ -1,1 +1,9 @@
-0,0:Escape=0
+0,21:Status=tile_Regeneration
+2,20:Destructible=5;Village=5
+16,2:Destructible=2;Village=2
+9,10:Status=tile_Regeneration;Destructible=Arundel
+13,17:Destructible=4;Village=4
+15,7:Status=tile_Regeneration
+5,3:Destructible=1;Village=1
+17,4:Status=tile_Regeneration
+2,12:Destructible=3;Village=3

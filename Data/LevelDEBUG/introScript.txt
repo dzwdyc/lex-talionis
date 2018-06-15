@@ -1,6 +1,6 @@
 # Intro Script
-set_level_constant;VillagesDestroyed
-set_level_constant;VillagesSecured
+set_level_constant;VillagesDestroyed;0
+set_level_constant;VillagesSecured;0
 t;2
 set_camera_pan;1
 set_cursor;Noah
@@ -11,8 +11,9 @@ disp_cursor;1
 wait;1000
 disp_cursor;0
 u;Noah;Right
-s;Noah;Alright, team, Byrak is invading.{w}{br}We need to stop them from destroying all of the villagers while also defending Arundel Castle.
+s;Noah;Alright, team, Byrak is invading.{w}{br}We need to stop them from destroying all of the villagers,{w}{br}while also defending Arundel Castle.
 u;Kalin;Left
+bop;Kalin
 s;Kalin;Let's give them a taste of Arundel justice!
 # Remove Noah and Kalin from the scene
 t;1

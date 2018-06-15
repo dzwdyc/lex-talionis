@@ -8,7 +8,7 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>1,0,0,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>12,3,3,4,4,5,1,6,8</bases>
+        <bases>12,3,3,4,4,5,1,6,8,20</bases>
         <growths>105,55,55,50,50,50,40,100</growths>
         
         <inventory>Iron Sword</inventory>
