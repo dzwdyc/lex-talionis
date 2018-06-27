@@ -35,4 +35,8 @@ elif;self.unit.team == 'player' and 'GenericDies' not in gameStateObj.game_const
 # Boss Death Quotes
 elif;self.unit.name == 'Anders'
 	set_level_constant;BossDead
+elif;self.unit.team == 'enemy' and self.unit.klass == 'Myrmidon' and 'MyrmDies' not in gameStateObj.game_constants
+	s;Kalin;Wait, you actually killed it?{w}{br}It was there to impose a time limit.
+	s;Noah;Didn't seem to do a very good job of that.
+	set_game_constant;MyrmDies
 end

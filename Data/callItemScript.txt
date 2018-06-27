@@ -1,0 +1,4 @@
+if;self.unit.name == 'Pride +1'
+    inc_game_constant;extra_enemy_growths;2
+    custom_banner;Pride Increased!
+end

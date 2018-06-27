@@ -57,13 +57,14 @@
     <!-- Barkskin Status -->
 	<status name="Barkskin">
 		<id>Barkskin</id>
-		<desc>Grants DEF +5, but inflicts SPD -4.</desc>
+		<desc>Grants extra DEF.</desc>
 		<image_index>9,8</image_index>
-		<components>stat_change,time</components>
+		<components>stat_change,upkeep_stat_change,time</components>
 
-		<time>5</time>
+		<time>3</time>
 		<!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
-    	<stat_change>0,0,0,0,-4,0,5,0,0,0</stat_change>
+    	<stat_change>0,0,0,0,0,0,3,0,0,0</stat_change>
+        <upkeep_stat_change>0,0,0,0,0,0,-1,0,0,0</upkeep_stat_change>
     </status>
 
     <!-- Stun Status -->

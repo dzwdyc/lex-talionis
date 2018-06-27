@@ -247,3 +247,15 @@ Wexp: 0, 71, 0, 0, 0, 0, 0
 Items: Iron Lance 45
 *** Convoy:
 Items: 
+
+=== Level 0 === Money: 0
+*** Noah: 
+Lvl 1, Exp 10
+Wexp: 2, 0, 0, 0, 0, 0, 0
+Items: Iron Sword 44, Brave Sword 20, Elixir 1
+*** Kalin: Flying
+Lvl 1, Exp 0
+Wexp: 0, 0, 1, 0, 0, 0, 0
+Items: Iron Axe 45, Barkskin 2, Elixir 1
+*** Convoy:
+Items: 

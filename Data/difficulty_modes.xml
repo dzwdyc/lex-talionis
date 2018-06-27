@@ -20,4 +20,44 @@
         <truelevel_enemies>0</truelevel_enemies>
     </difficulty>
 
+    <difficulty name="Hard">
+        <id>2</id>
+        <death>?</death>
+        <growths>?</growths>
+        <rng>true_hit</rng>
+        <tutorial>0</tutorial>
+
+        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
+        <player_growths>0,0,0,0,0,0,0,0,0,0</player_growths>
+        <enemy_growths>10,10,10,10,10,10,10,10,0,0</enemy_growths>
+        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
+        <player_bases>0,0,0,0,0,0,0,0,0,0</player_bases>
+        <enemy_bases>0,0,0,0,0,0,0,0,0,0</enemy_bases>
+
+        <autolevel_enemies>0</autolevel_enemies>
+        <autolevel_players>0</autolevel_players>
+
+        <truelevel_enemies>0</truelevel_enemies>
+    </difficulty>
+
+    <difficulty name="Lunatic">
+        <id>3</id>
+        <death>?</death>
+        <growths>?</growths>
+        <rng>true_hit</rng>
+        <tutorial>0</tutorial>
+
+        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
+        <player_growths>0,0,0,0,0,0,0,0,0,0</player_growths>
+        <enemy_growths>20,20,20,20,20,20,20,20,0,0</enemy_growths>
+        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
+        <player_bases>0,0,0,0,0,0,0,0,0,0</player_bases>
+        <enemy_bases>0,0,0,0,0,0,0,0,0,0</enemy_bases>
+
+        <autolevel_enemies>0</autolevel_enemies>
+        <autolevel_players>0</autolevel_players>
+
+        <truelevel_enemies>0</truelevel_enemies>
+    </difficulty>
+
 </mode_catalog>

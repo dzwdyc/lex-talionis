@@ -117,7 +117,7 @@
         <components>weapon,uses,brave,weight</components>
         <weapontype>Sword</weapontype>
  
-        <uses>30</uses>
+        <uses>20</uses>
         <RNG>1</RNG>
         <value>150</value>
         <desc>Allows two consecutive hits.</desc>
@@ -125,7 +125,7 @@
         
 		<MT>6</MT>
 		<HIT>75</HIT>
-		<LVL>A</LVL>
+		<LVL>Noah</LVL>
     </item>
 
     <item name="Adamant Swd">
@@ -1547,6 +1547,22 @@
         <map_hit_color>96,144,232</map_hit_color>
     </item>
 
+    <item name="Elixir">
+        <id>Elixir_1</id>
+        <spritetype>Consumable</spritetype>
+        <spriteid>3</spriteid>       
+        <components>usable,heal,uses,beneficial,map_hit_color</components>
+ 
+        <uses>1</uses>
+        <RNG>0</RNG>
+        <value>1000</value>
+        <desc>Restores all HP.</desc>
+        
+        <heal>80</heal> 
+
+        <map_hit_color>96,144,232</map_hit_color>
+    </item>
+
     <item name="Spiritbane">
         <id>Spiritbane</id>
         <spritetype>Consumable</spritetype>
@@ -1578,6 +1594,18 @@
         <map_hit_color>96,144,232</map_hit_color>
     </item>
 
+    <item name="Pride +1">
+        <id>Pride_1</id>
+        <spritetype>Valuable</spritetype>
+        <spriteid>0</spriteid>       
+        <components>usable,uses,booster,beneficial,call_item_script</components>
+
+        <uses>1</uses>
+        <RNG>0</RNG>
+        <value>0</value>
+        <desc>A point of Pride.</desc>
+    </item>
+
     <item name="Skeleton Key">
         <id>Skeleton Key</id>
         <spritetype>Consumable</spritetype>
@@ -1602,19 +1630,6 @@
         <RNG>0</RNG>
         <value>8000</value>
         <desc>Permanently increases its user's maximum HP by 5.</desc>   
-    </item>
-
-    <item name="Master Seal">
-        <id>Master Seal</id>
-        <spritetype>Boosters</spritetype>
-        <spriteid>0</spriteid>       
-        <components>usable,uses,promotion,booster,beneficial</components>
-        
-        <promotion>All</promotion>
-        <uses>1</uses>
-        <RNG>0</RNG>
-        <value>8000</value>
-        <desc>Promotes.</desc>   
     </item>
 
     <item name="Energy Ring">
