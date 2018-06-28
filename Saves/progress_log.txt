@@ -1,261 +1,51 @@
-
-
-=== Level 0 === Money: 1500
-*** Ophie: Riposte
-Lvl 1, Exp 54
-Wexp: 10, 0, 0, 0, 0, 0, 0
-Items: Iron Sword 42
-*** Prim: Healtouch
-Lvl 1, Exp 33
-Wexp: 0, 0, 0, 0, 4, 0, 0
-Items: Heal 29, Glimmer Ward 27
-*** Convoy:
-Items: 
-
-=== Level 1 === Money: 1500
-*** Ophie: Riposte
-Lvl 1, Exp 54
-Wexp: 10, 0, 0, 0, 0, 0, 0
-Items: Iron Sword 42
-*** Prim: Healtouch
-Lvl 1, Exp 33
-Wexp: 0, 0, 0, 0, 4, 0, 0
-Items: Heal 29, Glimmer Ward 27
-*** Ophie: Riposte
-Lvl 3, Exp 59
-Wexp: 17, 0, 0, 0, 0, 0, 0
-Items: Iron Sword 33, Vulnerary 1
-*** Prim: Healtouch
-Lvl 2, Exp 75
-Wexp: 0, 0, 0, 0, 13, 0, 0
-Items: Heal 21, Glimmer Ward 27
-*** Joel: Cleave
-Lvl 4, Exp 79
-Wexp: 0, 0, 28, 0, 0, 0, 0
-Items: Iron Axe 33, Vulnerary 2
-*** Nia: Prescience
-Lvl 3, Exp 69
-Wexp: 0, 0, 0, 23, 0, 0, 0
-Items: Willow Bow 38, Hand Axe 20
-*** Convoy:
-Items: 
-
-=== Level 0 === Money: 1500
-*** Ophie: Riposte
-Lvl 1, Exp 54
-Wexp: 10, 0, 0, 0, 0, 0, 0
-Items: Iron Sword 42
-*** Prim: Healtouch
-Lvl 1, Exp 22
-Wexp: 0, 0, 0, 0, 3, 0, 0
-Items: Glimmer Ward 27, Heal 30
-*** Convoy:
-Items: 
-
-=== Level 1 === Money: 1500
-*** Ophie: Riposte
-Lvl 3, Exp 47
-Wexp: 16, 0, 0, 0, 0, 0, 0
-Items: Iron Sword 32
-*** Prim: Healtouch
-Lvl 2, Exp 51
-Wexp: 0, 0, 0, 0, 10, 0, 0
-Items: Heal 26, Glimmer Ward 24, Hand Axe 20
-*** Joel: Cleave
-Lvl 4, Exp 70
-Wexp: 0, 0, 28, 0, 0, 0, 0
-Items: Iron Axe 33, Vulnerary 3
-*** Nia: Prescience
-Lvl 4, Exp 1
-Wexp: 0, 0, 0, 23, 0, 0, 0
-Items: Willow Bow 38, Vulnerary 3
-*** Convoy:
-Items: 
-
-=== Level 2 === Money: 3160
-*** Ophie: Riposte,Vantage
-Lvl 5, Exp 28
-Wexp: 21, 0, 0, 0, 0, 0, 0
-Items: Steel Sword 29, Iron Sword 27, Hatchet 35, Slim Lance 35, Angelic Robe 1
-*** Prim: Healtouch
-Lvl 3, Exp 75
-Wexp: 0, 0, 0, 0, 20, 0, 0
-Items: Heal 18, Glimmer Ward 22
-*** Joel: Cleave,Shove
-Lvl 5, Exp 56
-Wexp: 0, 0, 36, 0, 0, 0, 0
-Items: Hand Axe 20, Iron Axe 25, Vulnerary 3, Potion 2
-*** Nia: Prescience,Critical
-Lvl 5, Exp 43
-Wexp: 0, 0, 0, 35, 0, 0, 0
-Items: Willow Bow 25
-*** Althea: Resistance +2,Focus
-Lvl 3, Exp 11
-Wexp: 0, 0, 0, 0, 0, 13, 0
-Items: Fire Ward 23, Vulnerary 2
-*** Drake: Canto,Savior
-Lvl 6, Exp 27
-Wexp: 11, 26, 0, 0, 0, 0, 0
-Items: Iron Lance 35, Iron Sword 43, Spiritbane 2
-*** Convoy:
-Items: Vulnerary 3, Vulnerary 3
-
-=== Level 3 === Money: 5160
-*** Ophie: Riposte,Vantage
-Lvl 7, Exp 64.0
-Wexp: 31, 0, 0, 0, 0, 0, 0
-Items: Rapier 4, Steel Sword 26, Iron Sword 25, Vulnerary 2, Steel Axe 27
-*** Prim: Healtouch,Miracle
-Lvl 5, Exp 22
-Wexp: 0, 0, 0, 0, 34, 0, 0
-Items: Glimmer Ward 19, Heal 7
-*** Joel: Cleave,Shove
-Lvl 6, Exp 59
-Wexp: 0, 0, 46, 0, 0, 0, 0
-Items: Iron Axe 15, Hand Axe 20, Hatchet 35, Skeleton Key 1
-*** Nia: Prescience,Critical
-Lvl 6, Exp 71
-Wexp: 0, 0, 0, 45, 0, 0, 0
-Items: Willow Bow 12, Mana Ring 1
-*** Althea: Focus,Resistance +2
-Lvl 4, Exp 67
-Wexp: 0, 0, 0, 0, 0, 22, 0
-Items: Fire Ward 14, Vulnerary 2
-*** Drake: Canto,Savior
-Lvl 7, Exp 28
-Wexp: 14, 34, 0, 0, 0, 0, 0
-Items: Iron Lance 37, Iron Sword 42, Spiritbane 2
-*** Renae: Locktouch
-Lvl 4, Exp 3
-Wexp: 19, 0, 0, 0, 0, 0, 0
-Items: Iron Sword 42, Vulnerary 1
-*** Theo: Provoke,Shove
-Lvl 5, Exp 65
-Wexp: 0, 25, 0, 0, 0, 0, 0
-Items: Iron Lance 26, Slim Lance 35, Mend 15
-*** Convoy:
-Items: Skeleton Key 1, Javelin 20
-
-=== Level 0 === Money: 1500
+=== Level 6 === Money: 1500
 *** Ophie: Riposte
 Lvl 1, Exp 0
 Wexp: 8, 0, 0, 0, 0, 0, 0
-Items: Iron Sword 45
+Items: Iron Sword 45, Magebane Swd 15
 *** Prim: Healtouch
 Lvl 1, Exp 0
 Wexp: 0, 0, 0, 0, 1, 0, 0
 Items: Glimmer Ward 30, Heal 30
-*** Convoy:
-Items: 
-
-=== Level DEBUG === Money: 0
-*** Franz: Canto
-Lvl 1, Exp 0
-Wexp: 1, 31, 0, 0, 0, 0, 0
-Items: Iron Sword 46, Iron Lance 45, Vulnerary 3, Vulnerary 3
-*** Eirika: 
-Lvl 1, Exp 0
-Wexp: 1, 0, 0, 0, 0, 0, 0
-Items: Rapier 40, Vulnerary 3
-*** Seth: Canto
-Lvl 1, Exp 0
-Wexp: 181, 181, 0, 0, 0, 0, 0
-Items: Steel Sword 30, Silver Lance 20, Vulnerary 3
-*** Gilliam: 
+*** Joel: Cleave
+Lvl 3, Exp 0
+Wexp: 0, 0, 16, 0, 0, 0, 0
+Items: Iron Axe 45, Vulnerary 3
+*** Nia: Prescience
+Lvl 3, Exp 0
+Wexp: 0, 0, 0, 16, 0, 0, 0
+Items: Willow Bow 45, Vulnerary 3, Oak Bow 30
+*** Althea: Resistance +2,Focus
+Lvl 2, Exp 0
+Wexp: 0, 0, 0, 0, 0, 6, 0
+Items: Fire Ward 30, Vulnerary 3
+*** Drake: Canto,Savior
+Lvl 5, Exp 0
+Wexp: 11, 16, 0, 0, 0, 0, 0
+Items: Iron Sword 43, Iron Lance 45, Great Lance 25
+*** Renae: Locktouch
 Lvl 4, Exp 0
-Wexp: 0, 71, 0, 0, 0, 0, 0
-Items: Iron Lance 45
-*** Convoy:
-Items: 
-
-=== Level DEBUG === Money: 0
-*** Franz: Canto
-Lvl 1, Exp 0
-Wexp: 1, 31, 0, 0, 0, 0, 0
-Items: Iron Sword 46, Iron Lance 45, Vulnerary 3, Vulnerary 3
-*** Eirika: 
-Lvl 1, Exp 0
-Wexp: 1, 0, 0, 0, 0, 0, 0
-Items: Rapier 40, Vulnerary 3
-*** Seth: Canto
-Lvl 1, Exp 0
-Wexp: 181, 181, 0, 0, 0, 0, 0
-Items: Steel Sword 30, Silver Lance 20, Vulnerary 3
-*** Gilliam: 
+Wexp: 16, 0, 0, 0, 0, 0, 0
+Items: Iron Sword 45, Vulnerary 3
+*** Theo: Provoke
 Lvl 4, Exp 0
-Wexp: 0, 71, 0, 0, 0, 0, 0
-Items: Iron Lance 45
-*** Convoy:
-Items: 
-
-=== Level DEBUG === Money: 0
-*** Franz: Canto
+Wexp: 0, 16, 0, 0, 0, 0, 0
+Items: Iron Lance 45, Vulnerary 3
+*** Eliza: Synergy
 Lvl 1, Exp 0
-Wexp: 1, 31, 0, 0, 0, 0, 0
-Items: Iron Sword 46, Iron Lance 45, Vulnerary 3, Vulnerary 3
-*** Eirika: 
-Lvl 1, Exp 0
-Wexp: 1, 0, 0, 0, 0, 0, 0
-Items: Rapier 40, Vulnerary 3
-*** Seth: Canto
-Lvl 1, Exp 0
-Wexp: 181, 181, 0, 0, 0, 0, 0
-Items: Steel Sword 30, Silver Lance 20, Vulnerary 3
-*** Gilliam: 
-Lvl 4, Exp 0
-Wexp: 0, 71, 0, 0, 0, 0, 0
-Items: Iron Lance 45
-*** Convoy:
-Items: 
-
-=== Level DEBUG === Money: 0
-*** Franz: Canto
-Lvl 1, Exp 0
-Wexp: 1, 31, 0, 0, 0, 0, 0
-Items: Iron Sword 46, Iron Lance 45, Vulnerary 3, Vulnerary 3
-*** Eirika: 
-Lvl 1, Exp 0
-Wexp: 1, 0, 0, 0, 0, 0, 0
-Items: Rapier 40, Vulnerary 3
-*** Seth: Canto
-Lvl 1, Exp 0
-Wexp: 181, 181, 0, 0, 0, 0, 0
-Items: Steel Sword 30, Silver Lance 20, Vulnerary 3
-*** Gilliam: 
-Lvl 4, Exp 0
-Wexp: 0, 71, 0, 0, 0, 0, 0
-Items: Iron Lance 45
-*** Convoy:
-Items: 
-
-=== Level DEBUG === Money: 0
-*** Franz: Canto
-Lvl 1, Exp 0
-Wexp: 1, 31, 0, 0, 0, 0, 0
-Items: Iron Sword 46, Iron Lance 45, Vulnerary 3, Vulnerary 3
-*** Eirika: 
-Lvl 1, Exp 0
-Wexp: 1, 0, 0, 0, 0, 0, 0
-Items: Rapier 40, Vulnerary 3
-*** Seth: Canto
-Lvl 1, Exp 0
-Wexp: 181, 181, 0, 0, 0, 0, 0
-Items: Steel Sword 30, Silver Lance 20, Vulnerary 3
-*** Gilliam: 
-Lvl 4, Exp 0
-Wexp: 0, 71, 0, 0, 0, 0, 0
-Items: Iron Lance 45
-*** Convoy:
-Items: 
-
-=== Level 0 === Money: 0
-*** Noah: 
-Lvl 1, Exp 10
-Wexp: 2, 0, 0, 0, 0, 0, 0
-Items: Iron Sword 44, Brave Sword 20, Elixir 1
-*** Kalin: Flying
-Lvl 1, Exp 0
-Wexp: 0, 0, 1, 0, 0, 0, 0
-Items: Iron Axe 45, Barkskin 2, Elixir 1
+Wexp: 0, 21, 0, 0, 0, 0, 0
+Items: Iron Lance 45, Javelin 20
+*** Sam: Inspiration,Skill Aura
+Lvl 7, Exp 0
+Wexp: 0, 0, 0, 0, 31, 0, 0
+Items: Shine Ward 20, Mend 15, Fortune 10
+*** Kayla: Hex,Empowered,Speed +2
+Lvl 8, Exp 0
+Wexp: 0, 0, 0, 0, 0, 0, 36
+Items: Flux Ward 30, Scathe 10, Spiritbane 3
+*** Coyote: Initiative,Poise,Maximum HP +5
+Lvl 9, Exp 0
+Wexp: 41, 0, 0, 0, 0, 0, 0
+Items: Rusted Sword 20, Vulnerary 3
 *** Convoy:
 Items: 
