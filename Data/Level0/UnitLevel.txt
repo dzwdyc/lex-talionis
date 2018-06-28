@@ -29,7 +29,7 @@ enemy;0;0;Anders;2,12;SoftGuard
 enemy;0;0;Fighter;1;Iron Axe;10,11;Attack;Byrek
 enemy;0;0;Fighter;1;Iron Axe;9,10;Attack;Byrek
 enemy;0;0;Soldier;1;Iron Lance;6,11;Attack;Byrek
-enemy;0;0;Myrmidon;3;Iron Sword;15,18;Attack;Byrek
+enemy;0;0;Myrmidon;3;Iron Sword,dPride_1;15,18;Attack;Byrek
 enemy;0;0;Mage;1;Fire;8,14;Attack;Byrek
 mode;Hard,Lunatic
 enemy;0;0;Mage;1;Fire;9,15;Attack;Byrek
