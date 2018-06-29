@@ -1,4 +1,3 @@
-
 # UnitLevel.txt is used to define what units will be part of this level and where they will spawn
 # 
 # Each unit belongs on its own line
@@ -18,25 +17,25 @@
 # ai refers to what kind of AI the unit should possess.
 #
 # --------------------------------------------
-faction;Byrek;Soldier;Bandit;A Byrek Soldier
+faction;Byrak;Soldier;Bandit;A Byrak Soldier
 # Player Characters
 player;0;0;Noah;10,5;None
 player;0;0;Kalin;9,5;None
 # Enemies
 # Bosses
-enemy;0;0;Anders;2,12;SoftGuard
+enemy;0;0;Anders;2,12;Seize
 # Generics
-enemy;0;0;Fighter;1;Iron Axe;10,11;Attack;Byrek
-enemy;0;0;Fighter;1;Iron Axe;9,10;Attack;Byrek
-enemy;0;0;Soldier;1;Iron Lance;6,11;Attack;Byrek
-enemy;0;0;Myrmidon;3;Iron Sword;15,18;Attack;Byrek
-enemy;0;0;Mage;1;Fire;8,14;Attack;Byrek
+enemy;0;0;Fighter;1;Iron Axe;10,11;Seize;Byrak
+enemy;0;0;Fighter;1;Iron Axe;9,10;Seize;Byrak
+enemy;0;0;Soldier;1;Iron Lance;6,11;Seize;Byrak
+enemy;0;0;Myrmidon;3;Iron Sword,dPride_1;15,18;Seize;Byrak
+enemy;0;0;Mage;1;Fire;8,14;Seize;Byrak
 mode;Hard,Lunatic
-enemy;0;0;Mage;1;Fire;9,15;Attack;Byrek
-enemy;0;0;Fighter;1;Iron Axe;1,7;Attack;Byrek
+enemy;0;0;Mage;1;Fire;9,15;Seize;Byrak
+enemy;0;0;Fighter;1;Iron Axe;1,7;Seize;Byrak
 mode;Lunatic
-enemy;0;0;Fighter;1;Iron Axe;2,8;Attack;Byrek
-enemy;0;0;Soldier;1;Iron Lance;1,2;Attack;Byrek
+enemy;0;0;Fighter;1;Iron Axe;2,8;Seize;Byrak
+enemy;0;0;Soldier;1;Iron Lance;1,2;Seize;Byrak
 # === Reinforcements ===
 # Player Characters
 # Enemies

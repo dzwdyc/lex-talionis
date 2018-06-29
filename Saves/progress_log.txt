@@ -49,3 +49,15 @@ Wexp: 41, 0, 0, 0, 0, 0, 0
 Items: Rusted Sword 20, Vulnerary 3
 *** Convoy:
 Items: 
+
+=== Level 0 === Money: 0
+*** Noah: 
+Lvl 3, Exp 47
+Wexp: 10, 0, 0, 0, 0, 0, 0
+Items: Iron Sword 39, Brave Sword 14, Elixir 1
+*** Kalin: Flying
+Lvl 2, Exp 10
+Wexp: 0, 0, 8, 0, 0, 0, 0
+Items: Iron Axe 40, Hatchet 33
+*** Convoy:
+Items: 

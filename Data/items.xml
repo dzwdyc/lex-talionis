@@ -563,13 +563,13 @@
         <weapontype>Axe</weapontype>
  
         <uses>35</uses>
-        <RNG>1</RNG>
+        <RNG>1-2</RNG>
         <value>10</value>
         <desc></desc>
 		<weight>3</weight>
         
-		<MT>3</MT>
-		<HIT>80</HIT>
+		<MT>2</MT>
+		<HIT>90</HIT>
 		<LVL>D</LVL>
     </item>
         
@@ -1585,7 +1585,7 @@
         <spriteid>8</spriteid>
         <components>usable,status,uses,beneficial,map_hit_color</components>
 
-        <uses>3</uses>
+        <uses>1</uses>
         <RNG>0</RNG>
         <value>300</value>
         <desc>A draught that boosts the user's DEF.</desc>

@@ -8,8 +8,8 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>1,0,0,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>12,3,3,4,4,5,1,6,8</bases>
-        <growths>105,55,55,50,50,50,40,100</growths>
+        <bases>13,3,3,4,5,5,2,6,8</bases>
+        <growths>95,55,55,50,50,50,40,100</growths>
         
         <inventory>Iron Sword,Brave Sword,Elixir_1</inventory>
         
@@ -28,8 +28,8 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>0,0,1,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>14,5,0,2,5,5,5,1,8,7</bases>
-        <growths>100,60,0,40,50,60,60,20</growths>
+        <bases>14,5,0,3,3,5,5,1,8,7</bases>
+        <growths>100,60,0,40,45,60,60,20</growths>
         
         <inventory>Iron Axe,Barkskin,Elixir_1</inventory>
         

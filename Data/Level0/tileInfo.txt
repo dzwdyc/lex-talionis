@@ -1,3 +1,3 @@
-10,4:Status=tile_Regeneration
+10,4:Status=tile_Regeneration;Enemy_Seize=0
 3,6:Village=1
 15,18:Status=tile_Regeneration

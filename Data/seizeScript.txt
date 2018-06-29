@@ -1,1 +1,5 @@
-win_game
+if;self.unit.team == 'player' or self.unit.team == 'other'
+    win_game
+else
+    lose_game
+end
