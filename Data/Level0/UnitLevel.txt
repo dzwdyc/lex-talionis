@@ -28,7 +28,7 @@ enemy;0;0;Anders;2,12;Seize
 enemy;0;0;Fighter;1;Iron Axe;10,11;Seize;Byrak
 enemy;0;0;Fighter;1;Iron Axe;9,10;Seize;Byrak
 enemy;0;0;Soldier;1;Iron Lance;6,11;Seize;Byrak
-enemy;0;0;Myrmidon;3;Iron Sword,dPride_1;15,18;Seize;Byrak
+enemy;0;0;Myrmidon;3;Iron Sword,dPride_1;15,18;Seize;Byrak;Ghost
 enemy;0;0;Mage;1;Fire;8,14;Seize;Byrak
 mode;Hard,Lunatic
 enemy;0;0;Mage;1;Fire;9,15;Seize;Byrak
