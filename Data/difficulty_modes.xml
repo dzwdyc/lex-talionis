@@ -2,8 +2,8 @@
 
     <difficulty name="Normal">
         <id>1</id>
-        <death>?</death>
-        <growths>?</growths>
+        <death>0</death>
+        <growths>2</growths>
         <rng>true_hit</rng>
         <tutorial>0</tutorial>
 
@@ -22,8 +22,8 @@
 
     <difficulty name="Hard">
         <id>2</id>
-        <death>?</death>
-        <growths>?</growths>
+        <death>0</death>
+        <growths>2</growths>
         <rng>true_hit</rng>
         <tutorial>0</tutorial>
 
@@ -42,8 +42,8 @@
 
     <difficulty name="Lunatic">
         <id>3</id>
-        <death>?</death>
-        <growths>?</growths>
+        <death>0</death>
+        <growths>2</growths>
         <rng>true_hit</rng>
         <tutorial>0</tutorial>
 
