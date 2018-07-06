@@ -1563,24 +1563,24 @@
         <map_hit_color>96,144,232</map_hit_color>
     </item>
 
-    <item name="Spiritbane">
-        <id>Spiritbane</id>
+    <item name="Wyvern Tear">
+        <id>Wyvern Tear</id>
         <spritetype>Consumable</spritetype>
         <spriteid>5</spriteid>
         <components>usable,status,uses,beneficial,map_hit_color,self_anim</components>
 
-        <uses>3</uses>
+        <uses>1</uses>
         <RNG>0</RNG>
         <value>300</value>
-        <desc>A draught that boosts the user's RES.</desc>
-        <status>Resistant</status>
+        <desc>A draught that boosts the user's DEF and RES.</desc>
+        <status>Resistant,Barkskin</status>
 
         <map_hit_color>96,144,232</map_hit_color>
         <self_anim>MapSpiritbane,5,4,20</self_anim>
     </item>
 
-    <item name="Barkskin">
-        <id>Barkskin</id>
+    <item name="Darkness Blast">
+        <id>Darkness Blast</id>
         <spritetype>Consumable</spritetype>
         <spriteid>8</spriteid>
         <components>usable,status,uses,beneficial,map_hit_color</components>
@@ -1588,7 +1588,9 @@
         <uses>1</uses>
         <RNG>0</RNG>
         <value>300</value>
-        <desc>A draught that boosts the user's DEF.</desc>
+        <desc>A draught that makes the user's next attack strike twice. Disables double attacking.
+		
+		"You haven't seen anything yet." - Noah</desc>
         <status>Barkskin</status>
 
         <map_hit_color>96,144,232</map_hit_color>
@@ -1816,6 +1818,17 @@
         <RNG>0</RNG>
         <desc>I done broked something.</desc>
         <status>Fade_Status</status>
+    </item>
+	
+	<item name="Ghost">
+        <id>so_Ghost</id>
+        <spritetype>Skills</spritetype>
+        <spriteid>1,4</spriteid>
+        <components>status,virtual,beneficial</components>
+        <value>1</value>
+        <RNG>0</RNG>
+        <desc>Rainlash (and not me) done broked something.</desc>
+        <status>Ghost</status>
     </item>
 
     <item name="Shove">

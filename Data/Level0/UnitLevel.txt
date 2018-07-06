@@ -19,26 +19,34 @@
 # --------------------------------------------
 faction;Byrak;Soldier;Bandit;A Byrak Soldier
 # Player Characters
+mode;All
 player;0;0;Noah;10,5;None
 player;0;0;Kalin;9,5;None
+player;0;0;Edessa;9,6;None
+player;0;0;Lily;10,6;None
 # Enemies
 # Bosses
-enemy;0;0;Anders;2,12;Seize
+enemy;0;0;Anders;3,12;Seize
 # Generics
-enemy;0;0;Fighter;1;Iron Axe;10,11;Seize;Byrak
-enemy;0;0;Fighter;1;Iron Axe;9,10;Seize;Byrak
-enemy;0;0;Soldier;1;Iron Lance;6,11;Seize;Byrak
-enemy;0;0;Myrmidon;3;Iron Sword,dPride_1;15,18;Seize;Byrak;Ghost
-enemy;0;0;Mage;1;Fire;8,14;Seize;Byrak
 mode;Hard,Lunatic
-enemy;0;0;Mage;1;Fire;9,15;Seize;Byrak
-enemy;0;0;Fighter;1;Iron Axe;1,7;Seize;Byrak
-mode;Lunatic
+enemy;0;0;Knight;1;Steel Lance;1,2;Seize;Byrak
+enemy;0;0;Knight;1;Steel Lance;10,12;Seize;Byrak
 enemy;0;0;Fighter;1;Iron Axe;2,8;Seize;Byrak
-enemy;0;0;Soldier;1;Iron Lance;1,2;Seize;Byrak
+mode;Lunatic
+enemy;0;0;Mage;1;Fire;9,15;Seize;Byrak
+enemy;0;0;Mercenary;1;Iron Sword;4,11;Seize;Byrak
+mode;Normal,Hard,Lunatic
+enemy;0;0;Fighter;1;Iron Axe;9,10;Seize;Byrak
+enemy;0;0;Mage;1;Fire;8,14;Seize;Byrak
+enemy;0;0;Fighter;1;Iron Axe;1,7;Seize;Byrak
+enemy;0;0;Soldier;1;Steel Lance;6,11;Seize;Byrak
+enemy;0;0;Soldier;1;Steel Lance;7,12;Seize;Byrak
+enemy;0;0;Myrmidon;f3;Steel Sword,dPride_1;15,18;Seize;Byrak;Ghost
 # === Reinforcements ===
 # Player Characters
 # Enemies
 # === Triggers ===
 trigger;PlayerEntrance;Noah;10,4;10,5
 trigger;PlayerEntrance;Kalin;10,4;9,5
+trigger;PlayerEntrance;Edessa;10,4;9,6
+trigger;PlayerEntrance;Lily;10,4;10,6

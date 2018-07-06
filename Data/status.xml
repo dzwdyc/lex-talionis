@@ -96,7 +96,7 @@
     <!-- Ephemeral Status -->
     <status name="Ephemeral">
         <id>Ephemeral</id>
-        <desc>This unit dissapears when this status is removed.</desc>
+        <desc>This unit disappears when this status is removed.</desc>
         <image_index>9,3</image_index>
         <components>time,negative,ephemeral</components>
 
