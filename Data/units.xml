@@ -100,6 +100,26 @@
         <tags>Boss</tags>
         <skills></skills>
     </unit>
+	
+	<unit name="Kalin">
+        <id>Kalin_Enemy</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>0,A,A,0,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>14,5,0,3,4,5,5,1,8,7</bases>
+        <growths>100,60,0,40,45,60,60,20</growths>
+        
+        <inventory>Superior Axe,Pride_1</inventory>
+        
+        <level>20</level>
+        <class>Dracolord</class>
+        <desc>A fearsome dragon knight of unparalleled skill.</desc>
+        
+        <tags>Boss</tags>
+        <skills></skills>
+    </unit>
 
     <unit name="Ophie">
         <id>Ophie</id>

@@ -249,19 +249,18 @@
         <id>Superior Edge</id>
         <spritetype>Sword</spritetype>
         <spriteid>18</spriteid>       
-        <components>weapon,uses,weight,status_on_equip</components>
+        <components>weapon,uses,brave,weight</components>
         <weapontype>Sword</weapontype>
  
         <uses>10</uses>
         <value>200</value>
         <RNG>1</RNG>
-        <desc>Grants Hit/Avoid +30 against enemies wielding Swords.</desc>
-		<weight>7</weight>
-        <status_on_equip>Swordbreaker</status_on_equip>
+        <desc>An upgraded but inaccurate brave weapon with a lot of power behind it.</desc>
+		<weight>8</weight>
         
-		<MT>7</MT>
-		<HIT>80</HIT>
-		<LVL>B</LVL>
+		<MT>9</MT>
+		<HIT>65</HIT>
+		<LVL>A</LVL>
     </item>
 
     <!-- Lances -->
@@ -467,19 +466,18 @@
         <id>Superior Lance</id>
         <spritetype>Lance</spritetype>
         <spriteid>13</spriteid>       
-        <components>weapon,uses,weight,status_on_equip</components>
+        <components>weapon,uses,brave,weight</components>
         <weapontype>Lance</weapontype>
  
         <uses>10</uses>
-        <value>180</value>
-        <RNG>1</RNG>
-        <desc>Grants Hit/Avoid +30 against enemies wielding Lances.</desc>
-		<weight>6</weight>
-        <status_on_equip>Lancebreaker</status_on_equip>
+        <value>200</value>
+        <RNG>1-2</RNG>
+        <desc>An upgraded but inaccurate brave weapon that can be used from a distance.</desc>
+		<weight>9</weight>
         
-		<MT>9</MT>
-        <HIT>70</HIT>
-        <LVL>B</LVL>
+		<MT>10</MT>
+        <HIT>60</HIT>
+        <LVL>A</LVL>
     </item>
     
     <!-- Axes -->
@@ -622,7 +620,7 @@
         <desc>Allows two consecutive hits.</desc>
 		<weight>11</weight>
         
-		<MT>7</MT>
+		<MT>8</MT>
 		<HIT>65</HIT>
 		<LVL>A</LVL>
     </item>
@@ -703,19 +701,18 @@
         <id>Superior Axe</id>
         <spritetype>Axe</spritetype>
         <spriteid>17</spriteid>       
-        <components>weapon,uses,weight,status_on_equip</components>
+        <components>weapon,uses,brave,weight</components>
         <weapontype>Axe</weapontype>
  
         <uses>10</uses>
-        <value>160</value>
-        <RNG>1</RNG>
-        <desc>Grants Hit/Avoid +30 against enemies wielding Axes.</desc>
-		<weight>9</weight>
-        <status_on_equip>Axebreaker</status_on_equip>
+        <value>200</value>
+        <RNG>1-2</RNG>
+        <desc>An upgraded but inaccurate brave weapon that can be used from a distance.</desc>
+		<weight>10</weight>
         
 		<MT>10</MT>
-		<HIT>60</HIT>
-		<LVL>B</LVL>
+		<HIT>55</HIT>
+		<LVL>A</LVL>
     </item>
     
     <!-- Bows -->
