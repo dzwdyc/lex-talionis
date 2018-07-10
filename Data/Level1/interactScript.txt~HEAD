@@ -1,0 +1,3 @@
+if;gameStateObj.check_dead('Anders')
+    win_game
+end
