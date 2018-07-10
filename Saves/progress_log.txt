@@ -157,3 +157,27 @@ Wexp: 0, 0, 8, 0, 0, 0, 0
 Items: Iron Axe 38, Wyvern Tear 1, Hatchet 35
 *** Convoy:
 Items: Elixir 1, Elixir 1
+
+=== Level 0 === Money: 0
+*** Noah: Savior
+Lvl 1, Exp 50
+Wexp: 4, 0, 0, 0, 0, 0, 0
+Items: Iron Sword 40
+*** Kalin: Flying
+Lvl 2, Exp 30
+Wexp: 0, 0, 6, 0, 0, 0, 0
+Items: Iron Axe 42, Hatchet 33, Elixir 1
+*** Convoy:
+Items: 
+
+=== Level 0 === Money: 0
+*** Noah: Savior
+Lvl 1, Exp 81
+Wexp: 3, 0, 0, 0, 0, 0, 0
+Items: Iron Sword 42, Elixir 1
+*** Kalin: Flying
+Lvl 1, Exp 40
+Wexp: 0, 0, 3, 0, 0, 0, 0
+Items: Hatchet 34, Iron Axe 44, Elixir 1
+*** Convoy:
+Items: 
