@@ -612,7 +612,7 @@
         <!-- Light Foot, Armors, Heavy Cav, Light Cav, Regular, Mages -->
         <movement_group>2</movement_group>
         <tags>Flying,Mounted</tags>
-        <skills>1,Flying</skills>
+        <skills>1,Flying;3,Feat;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>105,60,15,45,40,35,35,25</growths>
 		<bases>14,5,0,3,3,0,5,0,7,6</bases>

@@ -1,0 +1,29 @@
+# Village Script
+# Show village closing
+set_origin
+set_tile_info;o0,0
+change_tile_sprite;o0,0;closed
+# Close
+replace_tile;o0,0;1
+inc_level_constant;VillagesSecured
+if;gameStateObj.level_constants['VillagesDestroyed'] + gameStateObj.level_constants['VillagesSecured'] >= 5
+    win_game
+    if;gameStateObj.turncount < 7
+        t;1
+        b;BlackBackground
+        t;2
+        s;Kalin;W-Wait, it's over?
+        s;Noah;Well yeah, what'd you expect?
+        s;Kalin;Uh... A boss?
+    else
+        u;Noah;Left
+        s;Noah;Victory is ours!
+        t;1
+        qr;Noah
+        b;BlackBackground
+        t;2
+        s;Kalin;That's a lame line.{w}{br}And you forgot to talk about how amazing I was!
+        s;Noah;I could have my character talk about how stinky yours is.
+        s;Kalin;Hmph!
+    end
+end

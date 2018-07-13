@@ -1,40 +1,8 @@
-# Destroy Script
 set_origin
-if;self.name == 'Arundel'
-    t;1
-    b;BlackBackground
-    t;2
-    s;Noah;Wait what? How did that happen?
-    s;Kalin;They started so far away!
-    s;Noah;We must never speak of this.
-    s;Kalin;Agreed.
-    lose_game
-    set_level_constant;no_fade_to_game_over
-else
-    # Display
-    change_tile_sprite;o-1,-2;ruins;destroy
-    # Now replace all tiles with ruins and remove special
-    set_tile_info;o0,0
-    replace_tile;o-1,-2;13
-    replace_tile;o0,-2;13
-    replace_tile;o1,-2;13
-    replace_tile;o-1,-1;13
-    replace_tile;o0,-1;13
-    replace_tile;o1,-1;13
-    replace_tile;o-1,0;13
-    replace_tile;o0,0;13
-    replace_tile;o1,0;13
-    # Logic
-    inc_level_constant;VillagesDestroyed
-    if;gameStateObj.level_constants['VillagesDestroyed'] == 1
-        s;Kalin;Noah, what are you doing?{w}{br}Two more and we fail!
-    elif;gameStateObj.level_constants['VillagesDestroyed'] == 2
-        s;Kalin;One more...
-    elif;gameStateObj.level_constants['VillagesDestroyed'] >= 3
-        s;Noah;Well that just happened...
-        lose_game
-    end
-    if;gameStateObj.level_constants['VillagesDestroyed'] + gameStateObj.level_constants['VillagesSecured'] >= 5
-        win_game
-    end
-end
+if;self.name == 'VerticalWall'
+	replace_tile;o0,0;9
+	change_tile_sprite;o0,0;OpenVerticalPassage;destroy
+elif;self.name == 'HorizontalWall'
+	replace_tile;o0,0;9
+	change_tile_sprite;o0,0;OpenHorizontalPassage;destroy
+

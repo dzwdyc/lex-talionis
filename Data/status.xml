@@ -408,6 +408,15 @@
         <components>rescue,negative</components>
     </status>
 
+	<!-- Clyde -->
+	<status name="Assassinate">
+		<id>Assassinate</id>
+		<image_index>1,5</image_index>
+        <desc>If attacking, double POW</desc>
+        <components>conditional_mt</components>
+        <conditional_mt>5;mode == 'Attack'</conditional_mt>
+	</status>	
+	
     <!-- CLASS SKILLS -->
     <status name="Locktouch">
     	<id>Locktouch</id>
