@@ -19,18 +19,43 @@
 # --------------------------------------------
 faction;Fulmor;Soldier;Empire;A Fulmor Soldier
 # Player Characters
-player;0;0;Tomoe;25,20;None
-player;0;0;Owen;36,23;None
-player;0;0;Celeste;37,24;None
-player;0;0;Clyde;36,25;None
-player;0;0;Lucia;37,23;None
-player;0;0;Noah;36,24;None
-player;0;0;Lily;37,25;None
-player;0;0;Edessa;25,28;None
+player;0;0;Owen;28,18;None
+player;0;0;Celeste;29,19;None
+player;0;0;Clyde;28,20;None
+player;0;0;Lucia;29,18;None
+player;0;0;Noah;28,19;None
+player;0;0;Lily;29,20;None
+player;0;0;Edessa;2,14;None
+player;0;0;Tomoe;4,14;None
 # Enemies
 # Bosses
-mode;All
-enemy;0;0;Kalin_Enemy;15,7;None
+enemy;0;0;Kalin_Enemy;13,3;HardGuard
+enemy;0;0;Arabella;13,6;HardGuard
+# Generics
+mode;Hard,Lunatic
+enemy;0;0;Ballista;2;Ballista;9,14;None;Fulmor
+enemy;0;0;Ballista;2;Ballista;9,24;None;Fulmor
+mode;Lunatic
+enemy;0;0;Knight;2;Iron Lance;20,18;SoftGuard;Fulmor
+enemy;0;0;Knight;2;Iron Lance;20,19;SoftGuard;Fulmor
+enemy;0;0;Knight;2;Iron Lance;20,20;SoftGuard;Fulmor
+mode;Normal,Hard
+enemy;0;0;Mercenary;2;Iron Sword;20,18;SoftGuard;Fulmor
+enemy;0;0;Mercenary;2;Iron Sword;20,19;SoftGuard;Fulmor
+enemy;0;0;Mercenary;2;Iron Sword;20,20;SoftGuard;Fulmor
+mode;Normal,Hard,Lunatic
+enemy;0;0;Ballista;2;Ballista;18,14;None;Fulmor
+enemy;0;0;Ballista;2;Ballista;18,24;None;Fulmor
+enemy;0;0;Ballista;2;Ballista;11,36;None;Fulmor
+enemy;0;0;Ballista;2;Ballista;15,36;None;Fulmor
+enemy;0;0;Dracoknight;4;Mithril Axe,Short Axe;6,18;SoftGuard;Fulmor
+enemy;0;0;Dracoknight;4;Mithril Axe,Short Axe;6,19;SoftGuard;Fulmor
+enemy;0;0;Dracoknight;4;Mithril Axe,Short Axe;6,20;SoftGuard;Fulmor
+enemy;0;0;Sentinel;7;Brave Axe,Hand Axe;27,4;HardGuard;Fulmor
+enemy;0;0;Knight;2;Iron Lance;12,26;SoftGuard;Fulmor
+enemy;0;0;Knight;2;Iron Lance;13,26;SoftGuard;Fulmor
+enemy;0;0;Knight;2;Iron Lance;14,26;SoftGuard;Fulmor
+enemy;0;0;Sentinel;7;Short Axe;13,19;HardGuard;Fulmor
 # === Reinforcements ===
 # Player Characters
 # Enemies

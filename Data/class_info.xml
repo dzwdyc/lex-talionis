@@ -9,7 +9,7 @@
         <promotes_from></promotes_from>
         <turns_into></turns_into>
         <!-- Light Foot,  Armors, Heavy Cav, Light Cav, Regular, Mages -->
-        <movement_group>0</movement_group>
+        <movement_group>8</movement_group>
         <tags></tags>
         <skills></skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
@@ -606,7 +606,7 @@
         <long_name>Dracoknight</long_name>
         <tier>1</tier>
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp_gain>0,0,1,0,0,0,0</wexp_gain>
+        <wexp_gain>1,1,1,0,0,0,0</wexp_gain>
         <promotes_from></promotes_from>
         <turns_into>Dracolord</turns_into>
         <!-- Light Foot, Armors, Heavy Cav, Light Cav, Regular, Mages -->
@@ -625,7 +625,7 @@
         <long_name>Dracolord</long_name>
         <tier>2</tier>
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp_gain>0,1,1,0,0,0,0</wexp_gain>
+        <wexp_gain>1,1,1,0,0,0,0</wexp_gain>
         <promotes_from>Dracoknight</promotes_from>
         <turns_into></turns_into>
         <!-- Light Foot, Armors, Heavy Cav, Light Cav, Regular, Mages -->

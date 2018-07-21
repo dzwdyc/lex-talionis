@@ -1,4 +1,5 @@
 # Intro Script
+set_level_constant;telePower;0
 t;2
 set_camera_pan;1
 set_cursor;Noah

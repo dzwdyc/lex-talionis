@@ -11,7 +11,7 @@
         <bases>13,3,3,4,5,5,2,6,6</bases>
         <growths>95,55,40,50,50,50,40,100</growths>
         
-        <inventory>Iron Sword,Elixir_1</inventory>
+        <inventory>Iron Sword,ArundelSword,Elixir_1,Iron Lance,Javelin</inventory>
         
         <level>1</level>
         <class>Lord</class>
@@ -91,7 +91,7 @@
         <bases>13,8,0,7,3,3,8,0,9</bases>
         <growths>120,70,5,70,30,30,70,5</growths>
         
-        <inventory>Javelin,Hand Axe,Elixir_1</inventory>
+        <inventory>Javelin,Hand Axe,Skeleton Key</inventory>
         
         <level>2</level>
         <class>Knight</class>
@@ -111,7 +111,7 @@
         <bases>12,0,6,7,6,6,1,5,4</bases>
         <growths>70,20,50,55,55,50,35,60</growths>
         
-        <inventory>Glimmer,Mend,Elixir_1</inventory>
+        <inventory>Glimmer,Mend,Elixir_1,Skeleton Key</inventory>
         
         <level>2</level>
         <class>Cleric</class>
@@ -131,7 +131,7 @@
         <bases>11,4,0,4,8,8,3,1,5</bases>
         <growths>75,45,5,45,75,65,35,35</growths>
         
-        <inventory>Iron Sword,Steel Sword,Willow Bow</inventory>
+        <inventory>Iron Sword,Willow Bow,Elixir_1</inventory>
         
         <level>2</level>
         <class>Thief</class>
@@ -201,6 +201,46 @@
         <skills></skills>
     </unit>
 	
+	<unit name="Arabella">
+        <id>Arabella</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>C,A,0,0,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>24,12,3,5,5,6,12,3,8,8</bases>
+        <growths>0,0,0,0,0,0,0,0</growths>
+        
+        <inventory>dSuperior Lance,dPride_1</inventory>
+        
+        <level>5</level>
+        <class>Dracolord</class>
+        <desc>A general of the Fulmor Army.</desc>
+        
+        <tags>Boss</tags>
+        <skills></skills>
+    </unit>
+	
+	<unit name="Leon">
+        <id>Leon</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>C,0,A,0,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>19,10,0,10,10,8,10,5,7,8</bases>
+        <growths>0,0,0,0,0,0,0,0</growths>
+        
+        <inventory>Mythril Axe,dPride_1</inventory>
+        
+        <level>5</level>
+        <class>Dracolord</class>
+        <desc>A general of the Fulmor Air Force.</desc>
+        
+        <tags>Boss</tags>
+        <skills></skills>
+    </unit>
+	
 	<unit name="Kalin_Enemy">
         <id>Kalin_Enemy</id>
         <gender>5</gender>
@@ -208,13 +248,13 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>0,A,A,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>33,17,0,10,13,15,15,9,8,8</bases>
+        <bases>17,8,0,4,6,7,7,2,6,7</bases>
         <growths>0,0,0,0,0,0,0,0</growths>
         
-        <inventory>Superior Axe,Pride_1</inventory>
+        <inventory>dShort Axe</inventory>
         
-        <level>11</level>
-        <class>Dracolord</class>
+        <level>3</level>
+        <class>Dracoknight</class>
         <desc>A fearsome dragon knight of unparalleled skill.</desc>
         
         <tags>Boss</tags>

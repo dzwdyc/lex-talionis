@@ -98,16 +98,16 @@
         <spriteid>10</spriteid>       
         <components>weapon,uses,reverse,weight</components>
         <weapontype>Sword</weapontype>
-		<weight>6</weight>
  
-        <uses>15</uses>
+        <uses>10</uses>
         <RNG>1</RNG>
         <value>120</value>
         <desc>Reverses the weapon triangle.</desc>
-        
-		<MT>6</MT>
+        <weight>5</weight>
+				
+		<MT>5</MT>
 		<HIT>75</HIT>
-		<LVL>B</LVL>
+		<LVL>D</LVL>
     </item>
 
     <item name="Brave Sword">
@@ -262,6 +262,24 @@
 		<HIT>65</HIT>
 		<LVL>A</LVL>
     </item>
+		
+    <item name="Flash">
+        <id>ArundelSword</id>
+        <spritetype>Sword</spritetype>
+        <spriteid>18</spriteid>       
+        <components>weapon,uses,brave,weight</components>
+        <weapontype>Sword</weapontype>
+ 
+        <uses>10</uses>
+        <value>0</value>
+        <RNG>1</RNG>
+        <desc>The exceptionally powerful and well-weighted Arundelian royal blade. It hits twice, but is very fragile.</desc>
+		<weight>2</weight>
+        
+		<MT>7</MT>
+		<HIT>90</HIT>
+		<LVL>D</LVL>
+    </item>
 
     <!-- Lances -->
     <item name="Iron Lance">
@@ -326,8 +344,8 @@
         <weapontype>Lance</weapontype>
  
         <uses>35</uses>
-        <value>14</value>
         <RNG>1</RNG>
+        <value>14</value>
         <desc></desc>
 		<weight>3</weight>
         
@@ -1631,32 +1649,18 @@
         <desc>Permanently increases its user's maximum HP by 5.</desc>   
     </item>
 
-    <item name="Energy Ring">
+    <item name="Power Ring">
         <id>Energy Ring</id>
         <spritetype>Boosters</spritetype>
         <spriteid>1</spriteid>       
         <components>usable,uses,permanent_stat_increase,booster,beneficial</components>
         
         <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
-        <stat_increase>0,2,0,0,0,0,0,0,0,0</stat_increase>
+        <stat_increase>0,2,2,0,0,0,0,0,0,0</stat_increase>
         <uses>1</uses>
         <RNG>0</RNG>
         <value>8000</value>
-        <desc>Permanently increases its user's strength by 2.</desc>   
-    </item>
-
-    <item name="Mana Ring">
-        <id>Mana Ring</id>
-        <spritetype>Boosters</spritetype>
-        <spriteid>2</spriteid>       
-        <components>usable,uses,permanent_stat_increase,booster,beneficial</components>
-        
-        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
-        <stat_increase>0,0,2,0,0,0,0,0,0,0</stat_increase>
-        <uses>1</uses>
-        <RNG>0</RNG>
-        <value>8000</value>
-        <desc>Permanently increases its user's magic by 2.</desc>   
+        <desc>Permanently increases its user's strength and magic by 2.</desc>   
     </item>
 
     <item name="Secret Book">
