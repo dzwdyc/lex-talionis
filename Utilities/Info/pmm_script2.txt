@@ -254,13 +254,13 @@ Aldor: A shame. Well, then, if you won't cease your interference, you leave me n
 * On Boss Fight
 
 AGAINST Aelfred, Aelfwynn, Saebbi, Cedric:
-    Aldor: You've insulted the Prince of Crows' will for the last time, lordling. 
+    Aldor: You've insulted the Crowbringer's will for the last time, lordling. 
 ELSE:
     Aldor: Out of my way, peasant.
 
 * On Aldor's Death
 
-Aldor: Pah! This isn't the end... The Prince of Crows will re -- Urgh...
+Aldor: Pah! This isn't the end... The Prince will re -- Urgh...
 
 * Transition to Village background
 * Aelfwynn and Cedric are talking
@@ -274,18 +274,22 @@ Aelfwynn: Unfortunately, *cough* it's not quite so simple. *cough* Find Aelfred,
 Aelfred: What is it?
 Aelfwynn: I bring grim tidings from Athria. I hate to worsen this tragedy, but... well... father is dead.
 Aelfred: ...Father... d-dead?
-Cedric: ...My condolences, Aelfwynn, Aelfred...
-Aelfred: But, Aelfwynn, it can't be! That make you queen... What are you doing here?
+Cedric: My condolences. Athelbert was a great king, and a formidable foe in his prime.
+Aelfred: ...Aelfwynn, you jest! 
+Aelfwynn: Hmm?
+Aelfred: That makes you queen... What would you be doing here?
 Aelfwynn: *cough* Adelbert has returned from exile. He has taken the throne.
 Aelfred: What! But father cast him out!
-Aelfwynn: Adelbert claims that father never formally disowned him, so by right he is the true king of Athria. And he brought a small army to prove it...
+Aelfwynn: Adelbert claims that father never formally disowned him, so by right he is the true king of Athria. And he brought an army of his own to prove it...
 Aelfred: Where did he find that?
-Aelfwynn: I know not. But father's funeral is soon, and I was actually tasked with bringing you back home. Adelbert wishes to reunite the family once more.
+Aelfwynn: I know not. But father's funeral is soon, and I was actually tasked with bringing you back home. Adelbert... wishes to reunite the family once more.
 Aelfred: ...
 Aelfwynn: I'm sorry we have to part so soon, Cedric. *cough* We can rest a night here, but I must soon return to Athria.
-Cedric: Nonsense. I will ride with you. These trails grow more dangerous by the day.
-Aelfwynn: I guess.
-Cedric: We'll rest here for the night. Tomorrow begins our trek to Athria. We can tell Adelbert of the Umbrian's attack then...
+Cedric: Nonsense. I will ride with you. If this Adelbert is truly to be king, it's time I met the man.
+Aelfwynn: Truly, Cedric, it is not your burden to carry-- 
+Cedric: Hmph. I must meet the brother of my betrothed, no? Besides, these trails grow more dangerous by the day. You will need my protection.
+Aelfwynn: *cough* If you insist.
+Cedric: We'll rest here for the night. Tomorrow begins our trek to Athria. We'll tell Adelbert of the Umbrian's treachery then...
 
 * Base Conversations
 
@@ -297,4 +301,104 @@ Cedric: We'll rest here for the night. Tomorrow begins our trek to Athria. We ca
 
 * Chapter III
 
-* Aelfred, Saebbi, Cedric in a dark and spooky forest
+Intro Script
+
+Aelfred and Saebbi joking in a dark, spooky forest... hunting/gathering for food
+A: Maybe Cedric wanted some alone time
+S: My brother... pah. you know him. Sometimes I wonder whether he really likes her.
+A: Aelfwynn?
+S: Yeah...
+A: *Backing up man point of view*
+S: Hmm...
+* pause*
+A: Hear that?
+S: Don't play with me
+A *real scream*
+A: No this time I'm not joking seriously.
+A: Fine. We'll I'm going go check it out
+S: What! Aelfred! Don't leave alone! Godwake!
+** Scene Change
+* sees a girl attacked by a monster *
+Hold, fiend! Don't worry, maiden, I'll save you
+No please... no more death
+* Aelfred fights a monster, slaying it
+There. You're safe now, maiden. What don't look so scared?
+E: Watch out--
+What?
+* A monster approaches from behind Aelfred and crits him
+A: Urgh... *cough*... not so fast... demon--
+E: I-I'm so sorry... the thread pulled so fast... so fast...
+
+* Spooky weird transition
+
+Aelfred and Saebbi joking in a dark, spooky forest... hunting/gathering for food
+Initial Conversation line
+S: Aelfred? Aelfred? 
+A: Huh?
+S: Wow. You spaced out. Did you have a daydream or something?
+A: I think I actually did.
+S: Ha? 
+A: Expected of all people you might take me seriously
+S: Hmm. You're serious
+A: Though, I don't know if its a supposed to be a guide or a warning...
+* real scren *
+A: There. That scream again! 
+S: Again?
+A: There's a Lorian girl in trouble just beyond this copse. 
+S: In trouble? From what
+A: I'm not sure... Go get Cedric. 
+S: But... 
+A: Quickly!
+
+* Scene Change
+* sees a girl attacked by a monster *
+E: No. Stay away! The thread is so frayed...
+A: Don't worry. I've got it... this time.
+* Aelfred attacks monster *
+A: Now...
+* Aelfred attacks, crits monster that appears behind him... *
+A: Not this time, fiend
+E: A-Ah. I-I didn't want to die again... not again... *sobs*
+A: Hey, it's okay. I'll protect you, alright? At least, I think I'm supposed to...
+E: This is not over. There's more
+A: Since we'll be here a while then... What's your name, Lorian?
+Elen: M-my n-name? Uh... E-Elen. Elen of Loria.
+Aelfred: Well, Elen of Loria. I have friends returning any minute. We'll get you to a safe place. But for now, hold tight.
+Elen: P-Please don't make me shudder again...
+Aelfred: Uh... Right... I'll be careful...
+
+* Turnwheel tutorial
+If you make a mistake Elen can trim that thread of fate, changing your destiny. If one of your lords would die in combat, Elen will be forced to right the weave. Be warned, however, that pulling on the weave of the universe does not come without consequences.
+
+* Turn 1 after Aelfred moves... Elen is unrescued from Aelfred
+
+Elen: There's so many... Let me help you.
+Aelfred: You have no weapons, Elen. You should stay back!
+Elen: P-pulling on so small a thread... It will not fray the weave...
+
+* Elen refreshes Aelfred
+
+* Beginning of turn 2:
+Cedric, Saebbi and the rest return to bottom of map.
+
+Saebbi: Eek! What the hell are those. There not even human...
+Cedric: The rumors were true... Like demons out of the legends.
+Saebbi: Things have gone from bad to worse... And Aelfred claimed to have a Goddream foretelling this?
+Cedric: Ready your blade Saebbi! 
+Saebbi: Right...
+Cedric: We can't leave Aelfred surrounded. He'll never be able to hold so many.
+
+* Transition to Forest scene...
+Aelfwynn: Are you all alright? *cough* Where have you been?
+Aelfred: We're alive. Which is more than some can ask for. There were demons --
+Aelfwynn: Demons? *cough* Don't tell me fairy stories, Aelfred.
+Cedric: Fairy stories they are not. It's hard to believe, but my lance is still slick with their offal...
+Aelfwynn: *cough* I had heard peasant's speak of attacks by abominations, but to think their tales true.
+Aelfred: We've got to get this one here by the fire. She's been out in the chill for who knows how long...
+Aelfwynn: Just who is she?
+Elen: My name is E-Elen... r-right? T-that's what I said?
+Aelfred: Uh, right...
+Elen: Elen of Loria...
+Aelfwynn: Why are you here in Athria, Elen?
+Elen: Hmmm... I-I d-don't r-remember... I don't remember... D-don't leave me, please...
+Aelfred: We're not leaving you. Don't worry. 
