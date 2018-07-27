@@ -1,0 +1,161 @@
+30 characters, 22 chapters...
+
+Level0:
+	Summary: Aelfred and Saebbi are ambushed by bandits. Cedric rides out to save them. Introduces basic mechanics.
+	Objective: Defeat Boss (Gwinoc)
+	Map: Forest covered ruins
+	Recruitable: Aelfred (Axe Lord), Saebbi (Myrm Lord) (at start); Cedric (Paladin), Bjorn (Knight) (turn 2)
+	Narration: Set the stage, history, and why Cedric, Aelfred, and Saebbi on the trip.
+	Intro: Opens with Saebbi running after Aelfred. Saebbi finds him accosted by bandits who want to ransom them to the Mercian king. Aelfred, too proud to submit, begins the fight.
+	TurnChange: Cedric and Bjorn show up after hearing the fight. Bjorn remarks that Cedric was right, it was bandits
+	Outro: Cedric accosts them both for not staying with the party. Saebbi wonders why their are bandits so close to the high road. Cedric ignores her, stating they need to press forward to reach Wren's Abbey by nightfall.
+Level1:
+	Summary: Wren's Abbey is under attack by bandits. A priestess of the abbey implores their aid. Advance basic mechanics. Introduces Magic, Bows.
+	Objective: Rout
+	Map: Monastery (mostly indoors)
+	Recruitable: Rhodri (Archer), Millie (Cleric) (at start)
+	Narration: Fresh off their victory, the party continues on their quest. But all is not well...
+	Intro: Millie appears, distraught, imploring their aid. She says Wren's Abbey is under attack by bandits. The party speeds toward the Abbey. Once there, they slay a couple of lowlifes and begin combat.
+	TurnChange: None
+	Outro: Saebbi remarks that this was not the only group of bandits. Their main force is at the village. Millie agrees to join the group, having nowhere else to go. The party leaves for the village.
+Level2:
+	Summary: The border village is under attack by Bandits and an Umbrian mercenary, Aldor, who claims allegiance to the Prince of Crows. Aelfwynn is holed up inside the town hall.
+	Objective: Defeat Boss. Defend Aelfwynn
+	Map: Village in forest
+	Recruitable: Rudolf (Fighter) (Talk); Aelfwynn (Paladin), Ava (Troubadour) (Talk)
+	PreBase: First Prep Screen
+	Base: None
+	Narration: The party rushes for the border village, and soon finds that mere bandits are not the only threat
+	Intro: Aldor inquires why this is taking so long. Soldier states they have met fierce resistance. Rudolf fights off many a bandit, and does not retreat, even when pressured by Ina. Aelfwynn wishes to go out and fight, but Ina convinces her that she is too sick to do so. The party arrives and gears up.
+	TurnChange: Aelfwynn leaves the town hall (turn 3?). On crossing a predefined threshold: Aldor calls out the lordlings, ordering them to leave this business well enough alone.
+	Outro: 
+Level3:
+	Summary: PRNJAD return to the Resistance Base. Meet Sam, the tactician and leader. Along with some of the other grunts in the mess hall. Ophie and Tak. About weakening the empire in any way possible Joel relays the first mission to them. A trade caravan is passing through the Haagara canyons... That's when we strike. 
+	Objective: Capture at least X trade carts.
+	Map: Pass through mountains?
+	Recruitable: Tak (at start)
+	PreBase: Return to the Resistance Base. Meet Sam. the tactician and leader. Sam seems more enamored with Althea. Joel gives them the tour. They might not look friendly, but give it some time. They'll grow on you. It's a tough life in the resistance, and beign nice ain't exactly rewarded. Just look at Nia. Ow! That's what I get. Right...
+	Base: - Meet the Crew
+		  - ???
+	Narration: Explains purpose of mission, we need money, and moves characters to the right place. My sources say there's a trade caravan leaving Kerala at 4 o'clock. It cannot make it to Empire territory... 
+	Intro: Prim expresses doubts that this is a good idea. Are you sure about this brother? As sure as I've ever been. This isn't just about revenge. The Empire's used this land for too long. It's time we fought back..It's our first real mission, don't fuck this up. Explanation of why Althea is with thim. Hey, it's my first real mission too. Milady, we can still turn back now. No, I've had enough of people protecting. I can fend for myself. Of course, milady. That includes you, Drake. Of course... Enough chatter, everyone. The caravans are approaching.
+	TurnChange: Ah! The Resistance! They're not getting this cargo, This is empire property blah blah blah.
+	Outro: Oh wow. Look at all these weapons. Come on, let's get out of while we still can... Empire thugs are sure to show up soon
+Level4:
+	Summary: We have weapons, but weapons aren't everything. now we need cash. Good thing I've come up with a cunning plan... Disguise yourself as treasury guards, raid the bank. Not really a success. Something goes wrong, or is changed. Raid the bank. Someone follows them home.
+	Objective: Grab Gold -> Escape
+	Map: Castle like Bank
+	Recruitable: Renae (at start)
+	PreBase: Explains new weapons are nice, but our coffers are dry... My sources say their's a big shipment from the Empire waiting in a warehouse just outside Rajas... With that money, we could have a lot of nice things...
+	Base: - ???
+		  - ???
+	Narration: With the plan in mind, the company travels to 
+	Intro: It's a lot more well-guarded then we expected. Oh, last time I was here these windows opened! Looks like we have to call this one quits guys. What. I'm no quitter. There aren't too many of them... We can take 'em. Boy, are you out of your mind? Nope, just confident that we can see this one through. Come on Renae, we can take 'em. Hell, I'm willing to try it. What's the point of coming out here if we're just going to return empty handed... There aren't too many of them. Well, let's make this quick.
+	TurnChange: They call for help. Later, a bunch of reinforcements show up.
+	Outro: Phew... I think we lost 'em. That was stupid. But it worked, right! Look at all this gold. I bet Duke Ulver is gonna shit himself when he hears that we got his money. Yeah, from now on, we'd better watch out... Come one everyone, let's head back
+Level5!!:
+	Summary: With this new influx of cash, the resistance can keep afloat. Thanks. Save our children. Please. Assault on fort. Your plan didn't go that well last time. We'll do this ourselves....
+	Whenever you arrive at the goal, it's a trap? Sam shows up at the same time. Escape?
+	Objective: Rout?
+	Map: Outside or Inside Fort
+	Recruitable: Sam (on turn 5, when all hope seems lost)
+	PreBase: Don't you get the feeling... Someone's following us? Hiyaa! Ah. Hey. It's just a woman. Please, I came alone. I heard you guys could help... I'd do anything. I guess we're not as secretive as we'd like. What's the problem, ma'am? The Empire stolen my daughter. In fact they've taken all the children of the village. Sounds like something Sam, needs to know. Come on in.
+	Base: - convincing others to join him. Ophie. Or others explaining there reasons for joining. 
+
+	The harvest has been bad this year, and we couldn't pay the taxes. We'd barely survived as it is. No absolutely not. You could be leading us into a trap. It's not worth it. It's just not worth it, cause it doesn't directly benefit your precious Resistance. You're right, it doesn't. We're done. Well, I'm not. I'm going to save them. Someone saved my life once. I don't care if I have to scrifice my own life. IT's about doing what's right, not what suits you the best. Others join in.
+		- ???
+	Narration: With the plan in mind, the company travels to the Prison....
+	Intro: 
+Level6:
+	Summary: Now we strike a blow to the heart if the Empires operations in Kerala. The Empire runs a brutal mine here in Kerala, where malcontents, slaves, prisoners are sent when they misbehave... If we can harass the mines, we can stop one of the biggest providers of resources for the Empire, and free our people.
+	Objective: Destroy the three sluice pipes -> Once destroyed. Prison warden comes out. Defeat him to win.
+	Map: Mountainous cliff mine area, with pipes. Prison like
+	Recruitable: Eliza (at start), Coyote (recruitable)
+	PreBase: Sam congratulates team on a successful mission.
+	Base: - Eliza (I want to join to!)
+		  - ???
+	Narration: Explains purpose of mission, and moves characters to the right place. Destroy the mines. We cannot allow the empire to continue harvesting Keralan land for their own benefit
+	Intro: Joel lays out the plan.
+	TurnChange: Guards show up. Prisoners need to escape.
+	Outro: Wow... That was close... Good job everyone... They take the prisoners back to the camp. Coyote is their leader...
+Level7:
+	Summary: The Free Cities have expressed an interest. Kayla. Perfect...  but what will they do next. Raid a fort for info...
+	Objective: Seize a fort
+	Map: Flat Forested Plain (Outside) or maybe replace map type with 4 or 5...
+	Recruitable: Kayla (at start)
+	PreBase: Kayla shows up?
+	Base: - More conversations with Kayla
+		  - ???
+	Narration: Explains purpose of mission, and move characters to the right place. In case any one hasnt heard, a liason of the Free Cities with be accompanying us for this mission. ???
+	Intro: Sam lays out the plan. Pretty simple, we need to seize that fort. Hmmm... Looks like they were expecting us. Prepare for a fight!
+	TurnChange: Reinforcements.
+	Outro: ???
+Level8:
+	Summary: They're going to attack a town... Show them that their true queen won't stand for that... If we defeat them there, and we show the world that the Rightful ruler of Kerala is still alive, well, the Free Cities will have to back us. Also has Dude 1 as main boss.
+	Objective: Defend Town. Defeat Boss. Cog of Destiny style battle
+	Map: Outside Town.
+	Recruitable: None
+	PreBase: Start of another glorious day, eh, Ophie? Ergh... Bad news everyone. I've been poring over the documents we grabbed from the Fort, and they're planning on attacking another village. So what, are we going to do about it? We're going to defend it. And we're going to turn it against us. And you're going to reveal yourself. Drake: Are you crazy? Althea: Yeah, are you? We'll have the Empire's Assassins on us in no time flat. We've reached the endgame. If we can do this, the Free Cities are sure to back us, right Kayla? That's what I've gathered.... When the people find out their beloved princess is still alive, well, we'll finally have the initiative. I don't intend to squander it...
+	Base: - Conversations with Althea
+		  - ???
+	Narration: Explains purpose of mission, and move characters to the right place. As night falls...
+	Intro: You nervous. No. What kind of question is that. Woah, just asking... There they are... I can see their banners! Okay Althea... Get up there and proclaim some inspiring speech...
+	TurnChange: Hey! That's Vagnius. From the Monastery! I'm gonna kill that bastard...
+	Outro: ???
+Level9: 
+	Summary: There's only one obstacle in our way, and the Free Cities will back us.... Duke Ulver himself. The rebellion army that coyote runs with assault the city, but it will be a distraction for our assination attempt. Assassinate him, and we can achieve victory. The first part is fighting in the castle ruins. Grab special weapons here, and need to zoom around area for the 3? keys to open the gate. Enemy army also down here, hellbent on stopping you.
+	Objective: Reach Castle Main
+	Map: Rugged Mazelike. A dungeon crawl. Sewers... Fog of War?
+	Recruitable: None
+	PreBase: Explanation of Summary above.
+	Base: - Nervous? No...
+		  - ...
+	Narration: Explains purpose of mission, and moves characters to the right place. Coyote sent his prisoners to distract the main bulk of Ulver's army, while the Resistance attempts to assassination Ulver
+	Intro:
+Level10:
+	Summary: Assault on castle. And then final battle with Duke Ulver himself.
+	Objective: Defeat boss
+	Map: Big Castle
+	Recruitable: None
+	PreBase: None
+	Base: None
+	Narration: None
+	Intro: So, our friends the resistance have arrived. Well, let them taste their blades against the emperor's finest. They will find themselves lacking... 
+	TurnChange: None
+	Outro: Joyous celebration in the streets. Althea is crowned queen. Epilogue & Endings. 
+
+Promote at 15? or 10?!
+Ophie (Fire) - Myrmidon -> Swordmaster - (Sword -> Sword) (Boisterous. The Little Warrior.)
+Prim (Water) - Mystic (Cleric) -> Oracle (Bishop) - (Light -> Light/Dark) (Shy and Demure, but still forthright against injustice)
+Nia (Wind) - Archer -> Sniper (Ranger?) - (Bow -> Bow) (Quiet. A natural killer. Affinity for Nature. Family died when young. Grew up in the forest.)
+Joel (Water) - Fighter -> Warrior - (Axe -> Axe/Bow) (Takes charge. Friendly. Exuberant.)
+Althea (Light) - Mage -> Sage - (Anima -> Anima) (Mischievous. Sometimes stuck-up, A little bit tsundere... Depressed but hopeful. Aristocratic)
+Drake (Earth) - Cavalier -> Paladin - (Lance/Sword -> Lance/Sword) (Static and lawful good. Cares deeply for others, especially Althea (like Seth))
+Theo (Dark) - Knight - General - (Lance -> Lance/Axe) (Tough, strong looking dude, but actually a well-read philospher knight. Trained as an engineer, scholar, and navigator.)
+Renae (Light) - Thief -> Assassin - (Sword -> Sword/Bow) (A kooky, exuberant genki girl. Tries to spread joy everywhere she goes.)
+Sam - (Dark) - Tactician -> Strategist - (Light -> Light) (Commanding and stern. Does not like to show weakness. Ambitious)
+Eliza (Earth) - Soldier -> Halberdier - (Lance -> Lance/Axe) (A gung-ho soldier - also a poet)
+Coyote - (Wind) - Mercenary -> Hero - (Sword -> Sword/Axe) (A man with a mysterious past. Edgy. Prison)
+Kayla (Fire) - Shaman - Warlock - (Dark -> Dark) (Impulsive mage, romantic and manipulative, Liason to the Free Cities)
+
+Supports:
+ Fire   -  Earth  - Water  -   Wind   -  Light   -  Dark
+*Ophie* -  Eliza  -  Prim  -  Coyote  -  Renae   -  Theo
+*Kayla* -  Drake  -  Joel  -   Nia    -  Althea  -  Sam
+ Kayla  - *Drake* -  Joel  -   Nia    -  Althea  -  Theo
+ Ophie  - *Eliza* -  Prim  -  Coyote  -  Renae   -  Sam
+ Ophie  -  Eliza  - *Prim* -  Coyote  -  Althea  -  Theo
+ Kayla  -  Drake  - *Joel* -   Nia    -  Renae   -  Sam 
+ Kayla  -  Drake  -  Joel  -  *Nia*   -  Renae   -  Theo
+ Ophie  -  Eliza  -  Prim  - *Coyote* -  Althea  -  Sam
+ Kayla  -  Drake  -  Prim  -  Coyote  - *Althea* -   X
+ Ophie  -  Eliza  -  Joel  -   Nia    - *Renae*  -   X
+ Kayla  -  Eliza  -  Joel  -  Coyote  -    X     - *Sam*
+ Ophie  -  Drake  -  Prim  -   Nia    -    X     - *Theo*
+
+ Ophie + Coyote both had the same teacher in the way of the blade - Yohn
+ Ophie + Prim grew up together
+ Kayla + Sam are secret lovers
+ Drake + Althea. Drake is Althea's protector. Like Ser Jorah Mormont
+ Nia + Coyote are fellow wanderers
+ Sam + Eliza were original members of the Resistance. Sam saved Eliza from something
