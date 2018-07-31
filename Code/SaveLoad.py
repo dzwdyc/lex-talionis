@@ -8,7 +8,7 @@ from collections import OrderedDict
 import GlobalConstants as GC
 import configuration as cf
 import TileObject, ItemMethods, UnitObject, StatusObject, CustomObjects, Utility, Weapons
-from UnitObject import Stat
+from StatObject import Stat
 
 import logging
 logger = logging.getLogger(__name__)
@@ -195,6 +195,7 @@ def parse_unit_line(unitLine, current_mode, allunits, factions, reinforceUnits, 
     elif unitLine[0] == 'load_player_characters':
         for unit in allunits:
             if unit.team == 'player' and not unit.dead:
+                # Event ID is unit name
                 reinforceUnits[unit.name] = (unit.id, None)
     elif unitLine[0] == 'trigger':
         if unitLine[1] not in triggers:
@@ -212,7 +213,7 @@ def parse_unit_line(unitLine, current_mode, allunits, factions, reinforceUnits, 
         # Saved Unit
         elif unitLine[1] == "1":
             for unit in allunits:
-                if unit.name == unitLine[3]: # Saved units use their name...\
+                if unit.id == unitLine[3]: # Saved units use their id (which normally is name)
                     if unitLine[4] == 'None':
                         position = None
                     else:
@@ -221,6 +222,7 @@ def parse_unit_line(unitLine, current_mode, allunits, factions, reinforceUnits, 
                         unit.position = position
                     else: # Unit does not start on board
                         reinforceUnits[unitLine[2]] = (unit.id, position)
+                    break
         # Created Unit
         elif unitLine[1] == "2":
             event_id = unitLine[2]
@@ -241,6 +243,9 @@ def add_unit(unitLine, allunits, reinforceUnits, metaDataObj, gameStateObj):
     assert len(unitLine) == 6, "unitLine %s must have length 6"%(unitLine)
     legend = {'team': unitLine[0], 'unit_type': unitLine[1], 'event_id': unitLine[2], 
               'unit_id': unitLine[3], 'position': unitLine[4], 'ai': unitLine[5]}
+    return add_unit_from_legend(legend, allunits, reinforceUnits, metaDataObj, gameStateObj)
+
+def add_unit_from_legend(legend, allunits, reinforceUnits, metaDataObj, gameStateObj):
     class_dict = metaDataObj['class_dict']
     for unit in GC.UNITDATA.getroot().findall('unit'):
         if unit.find('id').text == legend['unit_id']:
@@ -281,7 +286,10 @@ def add_unit(unitLine, allunits, reinforceUnits, metaDataObj, gameStateObj):
             u_i['stats'] = build_stat_dict(stats)
             logger.debug("%s's stats: %s", u_i['name'], u_i['stats'])
 
-            u_i['items'] = ItemMethods.itemparser(unit.find('inventory').text)
+            if 'items' in legend:
+                u_i['items'] = legend['items']
+            else:
+                u_i['items'] = ItemMethods.itemparser(unit.find('inventory').text)
             # Parse wexp
             u_i['wexp'] = unit.find('wexp').text.split(',')
             for index, wexp in enumerate(u_i['wexp'][:]):
@@ -320,8 +328,7 @@ def add_unit(unitLine, allunits, reinforceUnits, metaDataObj, gameStateObj):
             cur_unit.set_hp(int(cur_unit.stats['HP']))
 
             allunits.append(cur_unit)
-            break
-    return allunits, reinforceUnits
+            return cur_unit
 
 def create_unit(unitLine, allunits, factions, reinforceUnits, metaDataObj, gameStateObj):
     assert len(unitLine) in (9, 10), "unitLine %s must have length 9 or 10 (if optional status)"%(unitLine)

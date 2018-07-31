@@ -96,6 +96,7 @@ class StateMachine(object):
                            'start_newchild': Transitions.StartNewChild,
                            'start_extras': Transitions.StartExtras,
                            'start_all_saves': Transitions.StartAllSaves,
+                           'start_preloaded_levels': Transitions.StartPreloadedLevels,
                            'start_wait': Transitions.StartWait,
                            'start_save': Transitions.StartSave,
                            'credits': Transitions.CreditsState,
@@ -968,7 +969,8 @@ class MenuState(State):
                     gameStateObj.cursor.setPosition(closest_position, gameStateObj)
                     gameStateObj.stateMachine.changeState('unlockselect')
                 elif len(avail_pos) == 1:
-                    cur_unit.unlock(avail_pos[0], gameStateObj)
+                    item = cur_unit.get_unlock_item()
+                    cur_unit.unlock(avail_pos[0], item, gameStateObj)
                 else:
                     logger.error('Made a mistake in allowing unit to access Unlock!')
             elif selection == cf.WORDS['Search']:
@@ -1399,7 +1401,7 @@ class SpellState(State):
             targets = spell.spell.targets
             gameStateObj.cursor.currentHoveredUnit = [unit for unit in gameStateObj.allunits if unit.position == gameStateObj.cursor.position]
             gameStateObj.cursor.currentHoveredTile = gameStateObj.map.tiles[gameStateObj.cursor.position]
-            if targets in ['Enemy', 'Ally', 'Unit'] and gameStateObj.cursor.currentHoveredUnit:
+            if targets in ('Enemy', 'Ally', 'Unit') and gameStateObj.cursor.currentHoveredUnit:
                 gameStateObj.cursor.currentHoveredUnit = gameStateObj.cursor.currentHoveredUnit[0]
                 cur_unit = gameStateObj.cursor.currentHoveredUnit
                 if (targets == 'Enemy' and attacker.checkIfEnemy(cur_unit)) \
@@ -1427,7 +1429,10 @@ class SpellState(State):
                     if spell.extra_select:
                         splash += spell.extra_select_targets
                         spell.extra_select_targets = []
-                    if not spell.hit or defender or splash:
+                    if spell.unlock:
+                        gameStateObj.stateMachine.changeState('menu')
+                        attacker.unlock(gameStateObj.cursor.position, spell, gameStateObj)
+                    elif not spell.hit or defender or splash:
                         if not spell.detrimental or (defender and attacker.checkIfEnemy(defender)) or any(attacker.checkIfEnemy(unit) for unit in splash):
                             gameStateObj.combatInstance = Interaction.start_combat(gameStateObj, attacker, defender, gameStateObj.cursor.position, splash, spell)
                             gameStateObj.stateMachine.changeState('combat')
@@ -1570,7 +1575,8 @@ class SelectState(State):
                     gameStateObj.stateMachine.changeState('dialogue')
             elif self.name == 'unlockselect':
                 gameStateObj.stateMachine.changeState('menu')
-                cur_unit.unlock(gameStateObj.cursor.position, gameStateObj)
+                item = cur_unit.get_unlock_item()
+                cur_unit.unlock(gameStateObj.cursor.position, item, gameStateObj)
             else:
                 logger.warning('SelectState does not have valid name: %s', self.name)
                 gameStateObj.stateMachine.back() # Shouldn't happen
@@ -1681,6 +1687,7 @@ class StealState(State):
         elif event == 'SELECT':
             GC.SOUNDDICT['Select 1'].play()
             selection = gameStateObj.activeMenu.getSelection()
+            selection.droppable = False
             self.rube.remove_item(selection)
             self.initiator.add_item(selection)
             self.initiator.hasAttacked = True
@@ -1885,21 +1892,18 @@ class DialogueState(State):
         if gameStateObj.statedict['levelIsComplete'] == 'win':
             logger.info('Player wins!')
             # Run the outro_script
-            if not gameStateObj.statedict['outroScriptDone']:
-                gameStateObj.update_statistics(metaDataObj)
-                # Run the outro script
-                if os.path.exists(metaDataObj['outroScript']):
-                    outro_script = Dialogue.Dialogue_Scene(metaDataObj['outroScript'])
-                    gameStateObj.message.append(outro_script)
-                    gameStateObj.stateMachine.changeState('dialogue')
+            if not gameStateObj.statedict['outroScriptDone'] and os.path.exists(metaDataObj['outroScript']):
+                outro_script = Dialogue.Dialogue_Scene(metaDataObj['outroScript'])
+                gameStateObj.message.append(outro_script)
+                gameStateObj.stateMachine.changeState('dialogue')
                 gameStateObj.statedict['outroScriptDone'] = True
             else:
+                gameStateObj.update_statistics(metaDataObj)
                 gameStateObj.clean_up()
-                gameStateObj.output_progress()
                 if isinstance(gameStateObj.game_constants['level'], int):
                     gameStateObj.game_constants['level'] += 1
+                gameStateObj.output_progress_xml()  # Done after level change so that it will load up the right level next time
 
-                gameStateObj.stateMachine.clear()
                 # Determines the number of levels in the game
                 num_levels = 0
                 level_directories = [x[0] for x in os.walk('Data/') if os.path.split(x[0])[1].startswith('Level')]
@@ -1910,12 +1914,11 @@ class DialogueState(State):
                             num_levels = num
                     except:
                         continue
-                        
+                
+                gameStateObj.stateMachine.clear()        
                 if (not isinstance(gameStateObj.game_constants['level'], int)) or gameStateObj.game_constants['level'] >= num_levels:
-                    gameStateObj.stateMachine.clear()
                     gameStateObj.stateMachine.changeState('start_start')
                 else:
-                    gameStateObj.stateMachine.clear()
                     gameStateObj.stateMachine.changeState('turn_change') # after we're done waiting, go to turn_change, start the GAME!
                     gameStateObj.save_kind = 'Start'
                     gameStateObj.stateMachine.changeState('start_save')

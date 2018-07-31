@@ -186,7 +186,7 @@ class StatusMenu(StateMachine.State):
     def get_surfaces(self, gameStateObj, metaDataObj):
         surfaces = []
         # Background
-        name_back_surf = GC.IMAGESDICT['ChapterSelect']
+        name_back_surf = GC.IMAGESDICT['ChapterSelectGreen']
         surfaces.append((name_back_surf, (24, 2)))
         # Text
         big_font = GC.FONT['chapter_green']
@@ -1103,7 +1103,7 @@ class MainMenu(object):
 
         self.menu_width = 136
         self.menu_height = 24
-        if background == 'ChapterSelect':
+        if background.startswith('ChapterSelect'):
             self.menu_width = 192
             self.menu_height = 30
         
@@ -1119,7 +1119,7 @@ class MainMenu(object):
                 BGSurf = GC.IMAGESDICT[self.background + 'Highlight']
             else:
                 BGSurf = GC.IMAGESDICT[self.background]
-            top = center[1] - (len(self.options)/2.0 - index)*(self.menu_height+1) + (20 if self.background == 'ChapterSelect' else 0) # What is this formula?
+            top = center[1] - (len(self.options)/2.0 - index)*(self.menu_height+1) + (20 if self.background.startswith('ChapterSelect') else 0) # What is this formula?
             left = center[0] - BGSurf.get_width()//2
             surf.blit(BGSurf, (left, top))
          
@@ -1129,7 +1129,7 @@ class MainMenu(object):
   
         if show_cursor:
             height = center[1] - 12 - (len(self.options)/2.0 - self.currentSelection)*(self.menu_height+1) + self.cursorAnim[self.cursorCounter]
-            if self.background == 'ChapterSelect':
+            if self.background.startswith('ChapterSelect'):
                 height += 22 
             
             surf.blit(self.cursor1, (center[0] - self.menu_width//2 - self.cursor1.get_width()//2 - 8, height))
@@ -1163,11 +1163,26 @@ class MainMenu(object):
                 self.cursorCounter = 0
 
 class ChapterSelectMenu(MainMenu):
-    def __init__(self, options):
+    def __init__(self, options, colors=None):
         MainMenu.__init__(self, options, 'ChapterSelect')
+        if colors:
+            self.colors = [self.determine_color(color) for color in colors]
+        else:
+            self.colors = ['Green' for option in self.options]
         self.use_rel_y = len(options) > 3
         self.use_transparency = True
         self.rel_pos_y = 0
+
+    def determine_color(self, mode):
+        if mode == 2 or mode == '2' or mode == 'Lunatic':
+            return 'Red'
+        elif mode == 3 or mode == '3' or mode == 'Grandmaster':
+            return 'Blue'
+        else:
+            return 'Green'
+
+    def set_color(self, idx, mode):
+        self.colors[idx] = self.determine_color(mode)
 
     def moveUp(self):
         MainMenu.moveUp(self)
@@ -1201,11 +1216,11 @@ class ChapterSelectMenu(MainMenu):
         start_index = max(0, self.currentSelection - 3)
         for index, option in enumerate(self.options[start_index:self.currentSelection + 3], start_index):
             if flicker and self.currentSelection == index: # If the selection should flash white
-                BGSurf = GC.IMAGESDICT[self.background + 'Flicker'].copy()
+                BGSurf = GC.IMAGESDICT[self.background + 'Flicker' + self.colors[index]].copy()
             elif self.currentSelection == index: # Highlight the chosen option
-                BGSurf = GC.IMAGESDICT[self.background + 'Highlight'].copy()
+                BGSurf = GC.IMAGESDICT[self.background + 'Highlight' + self.colors[index]].copy()
             else:
-                BGSurf = GC.IMAGESDICT[self.background].copy()
+                BGSurf = GC.IMAGESDICT[self.background + self.colors[index]].copy()
             # Position
             diff = index - self.currentSelection
             if self.use_rel_y:

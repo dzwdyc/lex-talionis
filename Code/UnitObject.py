@@ -5,6 +5,7 @@ import configuration as cf
 import Interaction, MenuFunctions, AStar, Weapons, SaveLoad, TileObject
 import AI_fsm, Image_Modification, Dialogue, UnitSprite, StatusObject
 import Utility, LevelUp, ItemMethods, Engine, Banner, TextChunk
+from StatObject import Stat  # Needed so old saves can load
 
 import logging
 logger = logging.getLogger(__name__)
@@ -12,96 +13,6 @@ logger = logging.getLogger(__name__)
 class Multiset(Counter):
     def __contains__(self, item):
         return self[item] > 0
-
-# === Helper component class for unit stats ===================================
-class Stat(object):
-    def __init__(self, idx, stat, bonus=0):
-        self.idx = idx
-        self.base_stat = int(stat)
-        self.bonuses = bonus
-
-    def __float__(self):
-        return float(self.base_stat) + self.bonuses
-
-    def __int__(self):
-        return self.base_stat + self.bonuses
-
-    def __str__(self):
-        return str(self.base_stat + self.bonuses)
-
-    def __repr__(self):
-        return str(self.base_stat + self.bonuses)
-
-    def __sub__(self, other):
-        return self.base_stat + self.bonuses - other
-
-    def __add__(self, other):
-        return self.base_stat + self.bonuses + other
-
-    def __rsub__(self, other):
-        return other - self.base_stat - self.bonuses
-
-    def __radd__(self, other):
-        return other + self.base_stat + self.bonuses
-
-    def __mul__(self, other):
-        return (self.base_stat + self.bonuses) * other
-
-    def __rmul__(self, other):
-        return other * (self.base_stat + self.bonuses)
-
-    def __div__(self, other):
-        return (self.base_stat + self.bonuses) / other
-
-    def __floordiv__(self, other):
-        return (self.base_stat + self.bonuses) // other
-
-    def __rdiv__(self, other):
-        return other / (self.base_stat + self.bonuses)
-
-    def __rfloordiv__(self, other):
-        return other // (self.base_stat + self.bonuses)
-
-    def __neg__(self):
-        return -(self.base_stat + self.bonuses)
-
-    def __cmp__(self, other):
-        total = self.base_stat + self.bonuses
-        if total > other:
-            return 1
-        elif total == other:
-            return 0
-        elif total < other:
-            return -1
-
-    def serialize(self):
-        return (self.base_stat, self.bonuses)
-
-    def draw(self, surf, unit, topright, metaDataObj, compact=False):
-        if compact:
-            if self.base_stat >= metaDataObj['class_dict'][unit.klass]['max'][self.idx]:
-                font = GC.FONT['text_yellow']
-            elif self.bonuses > 0: 
-                font = GC.FONT['text_green']
-            elif self.bonuses < 0:
-                font = GC.FONT['text_red']
-            else:
-                font = GC.FONT['text_blue']
-            value = self.base_stat + self.bonuses
-            font.blit(str(value), surf, (topright[0] - font.size(str(value))[0], topright[1]))
-        else:
-            value = self.base_stat
-            if value >= metaDataObj['class_dict'][unit.klass]['max'][self.idx]:
-                GC.FONT['text_yellow'].blit(str(value), surf, (topright[0] - GC.FONT['text_green'].size(str(value))[0], topright[1]))
-            else:
-                GC.FONT['text_blue'].blit(str(value), surf, (topright[0] - GC.FONT['text_blue'].size(str(value))[0], topright[1]))
-            output = ""
-            if self.bonuses > 0:
-                output = "+" + str(self.bonuses)
-                GC.FONT['small_green'].blit(output, surf, (topright[0], topright[1]))
-            elif self.bonuses < 0:
-                output = str(self.bonuses)
-                GC.FONT['small_red'].blit(output, surf, (topright[0], topright[1]))
 
 # === GENERIC UNIT OBJECT =====================================================
 class UnitObject(object):
@@ -374,6 +285,9 @@ class UnitObject(object):
         if isinstance(enemyunit, UnitObject):
             if (self.getMainWeapon().effective and any([comp in enemyunit.tags for comp in self.getMainWeapon().effective.against])) or \
                     any([status.weakness and status.weakness.damage_type == self.getMainWeapon().TYPE for status in enemyunit.status_effects]):
+                white = True
+        else:  # Tile Object
+            if self.getMainWeapon().extra_tile_damage:
                 white = True
         self.getMainWeapon().draw(surf, (topleft[0] + 2, topleft[1] + 4), white)
         # Blit enemy item
@@ -777,11 +691,11 @@ class UnitObject(object):
 
     def change_hp(self, dhp):
         self.currenthp += int(dhp)
-        self.currenthp = Utility.clamp(self.currenthp, 0, self.stats['HP'])
+        self.currenthp = Utility.clamp(self.currenthp, 0, int(self.stats['HP']))
 
     def set_hp(self, hp):
         self.currenthp = int(hp)
-        self.currenthp = Utility.clamp(self.currenthp, 0, self.stats['HP'])
+        self.currenthp = Utility.clamp(self.currenthp, 0, int(self.stats['HP']))
 
     def get_comparison_level(self, metaDataObj):
         unit_klass = metaDataObj['class_dict'][self.klass]
@@ -1562,8 +1476,9 @@ class UnitObject(object):
         damage = self.damage(gameStateObj, item, adj)
 
         if isinstance(target, TileObject.TileObject):
-            pass
-            
+            if item.extra_tile_damage:
+                damage += item.extra_tile_damage
+
         else:
             # Determine effective
             if item.effective:
@@ -1921,7 +1836,8 @@ class UnitObject(object):
                 item.c_uses.uses = item.c_uses.total_uses
         # Units should have their positions NULLED
         self.position = None
-        # self.records = self.default_records()
+        # Unit sprite should be reset
+        self.sprite.change_state('normal', gameStateObj)
         # Units should be reset
         self.reset()
 
@@ -2117,23 +2033,27 @@ class UnitObject(object):
         gameStateObj.message.append(Dialogue.Dialogue_Scene('Data/seizeScript.txt', unit=self, tile_pos=self.position))
         gameStateObj.stateMachine.changeState('dialogue')
 
-    def unlock(self, pos, gameStateObj):
+    def unlock(self, pos, item, gameStateObj):
         self.hasAttacked = True
         locked_name = gameStateObj.map.tile_info_dict[pos]['Locked']
         unlock_script = 'Data/Level' + str(gameStateObj.game_constants['level']) + '/unlockScript.txt'
-        gameStateObj.message.append(Dialogue.Dialogue_Scene(unlock_script, unit=self, name=locked_name, tile_pos=pos))
-        gameStateObj.stateMachine.changeState('dialogue')
+        if os.path.exists(unlock_script):
+            gameStateObj.message.append(Dialogue.Dialogue_Scene(unlock_script, unit=self, name=locked_name, tile_pos=pos))
+            gameStateObj.stateMachine.changeState('dialogue')
 
-        # Use up skeleton key if it was what was used
-        if 'locktouch' not in self.status_bundle:
-            for item in self.items:
-                if item.unlock:
-                    item.uses.decrement()
-                    if item.uses.uses <= 0:
-                        self.remove_item(item)
-                        gameStateObj.banners.append(Banner.brokenItemBanner(self, item))
-                        gameStateObj.stateMachine.changeState('itemgain')
-                    break
+        if item and item.uses:
+            item.uses.decrement()
+            if item.uses.uses <= 0:
+                self.remove_item(item)
+                gameStateObj.banners.append(Banner.brokenItemBanner(self, item))
+                gameStateObj.stateMachine.changeState('itemgain')
+
+    def get_unlock_item(self):
+        keys = [item for item in self.items if item.unlock and not item.spell]
+        item = None
+        if keys and 'locktouch' not in self.status_bundle:
+            item = keys[0]
+        return item
 
     def can_unlock(self):
         return 'locktouch' in self.status_bundle or any(item.unlock for item in self.items) 

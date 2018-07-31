@@ -561,7 +561,8 @@ class BoundaryManager(object):
             for other_unit in other_units:
                 self._remove_unit(other_unit, gameStateObj)
             for other_unit in other_units:
-                self._add_unit(other_unit, gameStateObj)
+                if other_unit.position:
+                    self._add_unit(other_unit, gameStateObj)
 
     def arrive(self, unit, gameStateObj):
         if unit.position:
@@ -580,7 +581,8 @@ class BoundaryManager(object):
             for other_unit in other_units:
                 self._remove_unit(other_unit, gameStateObj)
             for other_unit in other_units:
-                self._add_unit(other_unit, gameStateObj)
+                if other_unit.position:
+                    self._add_unit(other_unit, gameStateObj)
 
     # Called when map changes
     def reset(self, gameStateObj):
@@ -938,6 +940,7 @@ class SaveSlot(object):
         self.playtime = 0
         self.realtime = 0
         self.kind = None # Prep, Base, Suspend, Battle, Start
+        self.mode_id = 1
         self.number = number
 
         self.metadata_fp = metadata_fp
@@ -954,6 +957,7 @@ class SaveSlot(object):
                 self.playtime = save_metadata['playtime']
                 self.realtime = save_metadata['realtime']
                 self.kind = save_metadata['kind']
+                self.mode_id = int(save_metadata.get('mode_id', 1))
                 if self.number is None:
                     self.number = save_metadata['save_slot']
 
