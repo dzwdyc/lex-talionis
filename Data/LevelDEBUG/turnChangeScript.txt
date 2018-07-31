@@ -1,2 +1,9 @@
 # Turn Change Script
 # Unused
+
+if;gameStateObj.turncount == 15
+	add_unit;Wyv01;rBottom1
+	add_unit;Wyv02;rBottom2
+	add_unit;Wyv03;rBottom3
+	add_unit;Wyv04;rBottom4
+	add_unit;Leon;rBoss1

@@ -6,19 +6,19 @@
         <gender>0</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>1,0,0,0,0,0,0</wexp>
+        <wexp>D,0,0,0,0,0,E</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>13,3,3,4,5,5,2,6,6</bases>
+        <bases>14,4,3,4,5,5,2,8,6</bases>
         <growths>95,55,40,50,50,50,40,100</growths>
         
-        <inventory>Iron Sword,ArundelSword,Elixir_1,Iron Lance,Javelin</inventory>
+        <inventory>Iron Sword,ArundelSword,Elixir_1</inventory>
         
-        <level>1</level>
+        <level>2</level>
         <class>Lord</class>
         <desc>A confused little boi.</desc>
         
         <tags>Lord</tags>
-        <skills>Savior</skills>
+        <skills></skills>
     </unit>
 
     <unit name="Kalin">
@@ -26,10 +26,10 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,0,1,0,0,0,0</wexp>
+        <wexp>0,0,E,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>14,5,0,3,4,5,5,1,6,7</bases>
-        <growths>100,60,5,40,45,60,60,45</growths>
+        <bases>14,6,0,3,5,5,5,1,6,7</bases>
+        <growths>110,60,5,40,60,60,60,45</growths>
         
         <inventory>Iron Axe,Elixir_1,Wyvern Tear</inventory>
         
@@ -46,14 +46,14 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,0,0,0,0,1,0</wexp>
+        <wexp>0,0,0,0,0,D,E</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>11,2,3,5,8,8,1,3,3</bases>
+        <bases>11,2,3,5,9,9,1,4,3</bases>
         <growths>60,35,40,50,70,80,30,50</growths>
         
-        <inventory>Fire,Elixir_1</inventory>
+        <inventory>Wind,Fire,Shatter,Elixir_1</inventory>
         
-        <level>1</level>
+        <level>2</level>
         <class>Mage</class>
         <desc>Another smol genki girl.</desc>
         
@@ -66,12 +66,12 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,0,0,A,0,0,0</wexp>
+        <wexp>0,0,0,B,0,0,E</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>14,5,4,6,6,2,2,2,5</bases>
         <growths>80,60,60,60,60,25,35,50</growths>
         
-        <inventory>Willow Bow,Elixir_1</inventory>
+        <inventory>Iron Bow,Elixir_1</inventory>
         
         <level>2</level>
         <class>Archer</class>
@@ -86,12 +86,12 @@
         <gender>0</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,D,D,0,0,0,0</wexp>
+        <wexp>D,D,D,D,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>13,8,0,7,3,3,8,0,9</bases>
+        <bases>16,8,0,7,3,3,8,0,9</bases>
         <growths>120,70,5,70,30,30,70,5</growths>
         
-        <inventory>Javelin,Hand Axe,Skeleton Key</inventory>
+        <inventory>Iron Lance,Hand Axe,Iron Bow,Skeleton Key</inventory>
         
         <level>2</level>
         <class>Knight</class>
@@ -106,12 +106,12 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,0,0,0,B,0,0</wexp>
+        <wexp>0,0,0,0,C,E,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>12,0,6,7,6,6,1,5,4</bases>
         <growths>70,20,50,55,55,50,35,60</growths>
         
-        <inventory>Glimmer,Mend,Elixir_1,Skeleton Key</inventory>
+        <inventory>Glimmer,Unlock,Heal,Elixir_1</inventory>
         
         <level>2</level>
         <class>Cleric</class>
@@ -126,19 +126,19 @@
         <gender>0</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>C,0,0,1,0,0,0</wexp>
+        <wexp>C,0,0,E,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>11,4,0,4,8,8,3,1,5</bases>
         <growths>75,45,5,45,75,65,35,35</growths>
         
-        <inventory>Iron Sword,Willow Bow,Elixir_1</inventory>
+        <inventory>Iron Sword,Iron Bow,Elixir_1</inventory>
         
         <level>2</level>
         <class>Thief</class>
         <desc>TBD</desc>
         
         <tags></tags>
-        <skills>Assassinate</skills>
+        <skills></skills>
     </unit>
 	
 	<unit name="Celeste">
@@ -166,12 +166,12 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,D,0,0,0,0,0</wexp>
+        <wexp>0,D,0,0,E,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>12,3,0,6,6,6,1,1,6</bases>
-        <growths>75,50,5,70,70,70,40,35</growths>
+        <bases>12,3,1,6,6,6,1,1,6</bases>
+        <growths>75,50,25,70,70,70,40,35</growths>
         
-        <inventory></inventory>
+        <inventory>Iron Lance,Elixir_1,Skeleton Key,Skeleton Key</inventory>
         
         <level>1</level>
         <class>Skirmisher</class>
@@ -206,7 +206,7 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>C,A,0,0,0,0,0</wexp>
+        <wexp>0,A,C,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>24,12,3,5,5,6,12,3,8,8</bases>
         <growths>0,0,0,0,0,0,0,0</growths>
@@ -226,12 +226,12 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>C,0,A,0,0,0,0</wexp>
+        <wexp>0,C,A,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>19,10,0,10,10,8,10,5,7,8</bases>
         <growths>0,0,0,0,0,0,0,0</growths>
         
-        <inventory>Mythril Axe,dPride_1</inventory>
+        <inventory>Mithril Axe,dPride_1</inventory>
         
         <level>5</level>
         <class>Dracolord</class>
@@ -241,23 +241,23 @@
         <skills></skills>
     </unit>
 	
-	<unit name="Kalin_Enemy">
+	<unit name="Kalin">
         <id>Kalin_Enemy</id>
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>0,A,A,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>17,8,0,4,6,7,7,2,6,7</bases>
+        <bases>25,12,0,3,10,5,10,3,6,7</bases>
         <growths>0,0,0,0,0,0,0,0</growths>
         
-        <inventory>dShort Axe</inventory>
+        <inventory>Superior Lance</inventory>
         
-        <level>3</level>
-        <class>Dracoknight</class>
+        <level>11</level>
+        <class>Dracolord</class>
         <desc>A fearsome dragon knight of unparalleled skill.</desc>
         
-        <tags>Boss</tags>
+        <tags></tags>
         <skills></skills>
     </unit>
 
@@ -331,7 +331,7 @@
 		<bases>13,4,2,5,5,3,2,1</bases>
 		<growths>80,55,35,80,80,25,20,40</growths>
         
-        <inventory>Willow Bow,Vulnerary</inventory>
+        <inventory>Iron Bow,Vulnerary</inventory>
         
         <level>3</level>
         <class>Archer</class>

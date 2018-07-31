@@ -1,4 +1,5 @@
 set_origin
+set_tile_info;o0,0	
 if;self.name == 'HorizontalDoor'
 	replace_tile;o0,0;9
 	change_tile_sprite;o0,0;OpenHorizontalPassage
@@ -7,25 +8,20 @@ elif;self.name == 'VerticalDoor'
 	change_tile_sprite;o0,0;OpenVerticalPassage
 elif;self.name == 'ChestLowerRight1'
 	change_tile_sprite;o0,0;OpenBlueChest
-	set_tile_info;o0,0
 	give_item;{unit};Brave Bow
 elif;self.name == 'ChestLowerRight2'
 	change_tile_sprite;o0,0;OpenBlueChest
-	set_tile_info;o0,0	
 	give_item;{unit};Lancereaver
 elif;self.name == 'ChestPrisonLeft1'
 	change_tile_sprite;o0,0;OpenBlueChest
-	set_tile_info;o0,0
 	give_item;{unit};Wyvern Tear
 elif;self.name == 'ChestPrisonLeft2'
 	change_tile_sprite;o0,0;OpenBlueChest
-	set_tile_info;o0,0
 	give_item;{unit};Mithril Mail
 elif;self.name == 'ChestBehindLowerLeftWall1'
 	change_tile_sprite;o0,0;OpenBlueChest
-	set_tile_info;o0,0
 	give_item;{unit};Rescue
 elif;self.name == 'ChestBehindLowerLeftWall2'
 	change_tile_sprite;o0,0;OpenBlueChest
-	set_tile_info;o0,0
 	give_item;{unit};Power Ring
+end

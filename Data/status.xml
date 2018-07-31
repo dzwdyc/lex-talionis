@@ -219,6 +219,24 @@
         <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
         <stat_change>0,0,0,0,2,0,0,0,0,0</stat_change>
     </status>
+	
+    <status name="Speed +3">
+        <id>fSpeed +3</id>
+        <desc>Grants SPD +3.</desc>
+        <image_index>0,4</image_index>
+        <components>stat_change,class_skill</components>
+        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
+        <stat_change>0,0,0,0,3,0,0,0,0,0</stat_change>
+    </status>
+	
+    <status name="Speed +5">
+        <id>fSpeed +5</id>
+        <desc>Grants SPD +5.</desc>
+        <image_index>0,4</image_index>
+        <components>stat_change,class_skill</components>
+        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
+        <stat_change>0,0,0,0,5,0,0,0,0,0</stat_change>
+    </status>
 
     <status name="Defense +2">
         <id>fDefense +2</id>
@@ -228,6 +246,15 @@
         <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
         <stat_change>0,0,0,0,0,0,2,0,0,0</stat_change>
     </status>
+	
+	<status name="Defense +3">
+        <id>fDefense +3</id>
+        <desc>Grants DEF +3.</desc>
+        <image_index>0,5</image_index>
+        <components>stat_change,class_skill</components>
+        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
+        <stat_change>0,0,0,0,0,0,3,0,0,0</stat_change>
+    </status>
 
     <status name="Resistance +2">
         <id>fResistance +2</id>
@@ -236,6 +263,15 @@
         <components>stat_change,class_skill</components>
         <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
         <stat_change>0,0,0,0,0,0,0,2,0,0</stat_change>
+    </status>
+	
+    <status name="Resistance +3">
+        <id>fResistance +3</id>
+        <desc>Grants RES +3.</desc>
+        <image_index>0,6</image_index>
+        <components>stat_change,class_skill</components>
+        <!-- HP, STR, MAG, SKL, SPD, LCK, DEF, RES, CON, MOV -->
+        <stat_change>0,0,0,0,0,0,0,3,0,0</stat_change>
     </status>
 
     <status name="Constitution +3">
@@ -408,15 +444,6 @@
         <components>rescue,negative</components>
     </status>
 
-	<!-- Clyde -->
-	<status name="Assassinate">
-		<id>Assassinate</id>
-		<image_index>1,5</image_index>
-        <desc>If attacking, double POW</desc>
-        <components>conditional_mt</components>
-        <conditional_mt>5;mode == 'Attack'</conditional_mt>
-	</status>	
-	
     <!-- CLASS SKILLS -->
     <status name="Locktouch">
     	<id>Locktouch</id>
@@ -424,6 +451,14 @@
     	<desc>Open doors and chests without a key.</desc>
     	<components>locktouch,class_skill</components>
     </status>
+	
+	<status name="Assassinate">
+		<id>Assassinate</id>
+		<image_index>5,10</image_index>
+        <components>assassinate,conditional_mt</components>
+        <desc>If attacking, double POW</desc>
+        <conditional_mt>5;mode == 'Attack'</conditional_mt>
+	</status>	
 
     <status name="Savior">
         <id>Savior</id>

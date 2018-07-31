@@ -1,34 +1,38 @@
 set_origin
-set_tile_info;o0,0
 if;self.name == 'NavigationSwitch'
 	if;gameStateObj.level_constants['telePower'] >= 3
+		set_tile_info;o0,0
 		if;gameStateObj.level_constants['telePower'] >= 5
 			#Gain point of pride
 			#Dialogue regarding transporting to Arundel
 		else
-			#Dialogue regarding trasnporting to Valeria
+			#Dialogue regarding transporting to Valeria
 		end
 		# change_tile_sprite;o0,0;pulled_nav_switch
 		set_level_constant;teleCoordinates;1
-		change_tile_sprite;14,23;WarpPanelGolden
+		change_tile_sprite;13,19;WarpPanelGolden
 		# appropriate dialogue
-		# enable escape tile
+		set_tile_info;13,19;Escape=0
 		change_objective_display_name;Escape
 		change_objective_win_condition;Escape the Fort.
 	else
 		#Dialogue of Lucia yelling at Noah that the teleporter doesn't have enough power
 	end
-elif;self.name == 'PowerSwitch'
-	# change_tile_sprite;o0,0;pulled_power_switch
-	inc_level_constant;telePower
-	if;gameStateObj.level_constants['telePower'] == 3
-		change_tile_sprite;14,23;WarpPanelRed
+else
+	set_tile_info;o0,0
+	if;self.name == 'PowerSwitch'
+		# change_tile_sprite;o0,0;pulled_power_switch
+		inc_level_constant;telePower
+		if;gameStateObj.level_constants['telePower'] == 3
+			change_tile_sprite;13,19;WarpPanelRed
+		end
+	elif;self.name == 'PrisonSwitch'
+		change_tile_sprite;3,16;OpenHorizontalPassage
+		replace_tile;3,16;9
+		change_tile_sprite;3,22;OpenHorizontalPassage
+		replace_tile;3,22;9
 	end
-elif;self.name == 'PrisonSwitch'
-	change_tile_sprite;3,16;OpenHorizontalPassage
-	replace_tile;3,16;9
-	change_tile_sprite;3,22;OpenHorizontalPassage
-	replace_tile;3,22;9
+end
 
 
 
