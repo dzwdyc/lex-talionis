@@ -1131,8 +1131,8 @@
     <item name="Unlock">
         <id>Unlock</id>
         <spritetype>Light</spritetype>
-        <spriteid>9</spriteid>       
-        <components>spell,unlock,uses,status,target_restrict,map_hit_color</components>
+        <spriteid>10</spriteid>       
+        <components>spell,uses,no_ai,unlock</components>
         <weapontype>Light</weapontype>
  
         <uses>10</uses>
@@ -1143,8 +1143,6 @@
        
         <LVL>C</LVL>
         <targets>Tile</targets>
-
-        <map_hit_color>96,144,232</map_hit_color>    
     </item>
 
     <item name="Rescue">
@@ -1166,6 +1164,26 @@
         <extra_select>1,Tile</extra_select>
 
         <map_hit_color>-248,248,248</map_hit_color>
+    </item>
+
+    <item name="Refresh">
+        <id>Refresh</id>
+        <spritetype>Light</spritetype>
+        <spriteid>6</spriteid>       
+        <components>spell,uses,beneficial,status,no_ai,target_restrict</components>
+        <weapontype>Light</weapontype>
+ 
+        <uses>10</uses>
+        <RNG>1</RNG>
+        <value>400</value>
+        <desc>Allows a unit to move again.</desc>
+        <status>Refresh_Status</status>
+        <target_restrict>target.isDone()</target_restrict>
+        
+        <LVL>A</LVL>
+        <targets>Ally</targets>
+
+        <map_hit_color>248,248,0</map_hit_color>    
     </item>
 
     <item name="Physic">
