@@ -1166,26 +1166,6 @@
         <map_hit_color>-248,248,248</map_hit_color>
     </item>
 
-    <item name="Refresh">
-        <id>Refresh</id>
-        <spritetype>Light</spritetype>
-        <spriteid>6</spriteid>       
-        <components>spell,uses,beneficial,status,no_ai,target_restrict</components>
-        <weapontype>Light</weapontype>
- 
-        <uses>10</uses>
-        <RNG>1</RNG>
-        <value>400</value>
-        <desc>Allows a unit to move again.</desc>
-        <status>Refresh_Status</status>
-        <target_restrict>target.isDone()</target_restrict>
-        
-        <LVL>A</LVL>
-        <targets>Ally</targets>
-
-        <map_hit_color>248,248,0</map_hit_color>    
-    </item>
-
     <item name="Physic">
         <id>Physic</id>
         <spritetype>Light</spritetype>
@@ -1226,6 +1206,26 @@
         <hit>70</hit>    
     </item>
 
+    <item name="Refresh">
+        <id>Refresh</id>
+        <spritetype>Light</spritetype>
+        <spriteid>6</spriteid>       
+        <components>spell,uses,beneficial,status,no_ai,target_restrict</components>
+        <weapontype>Light</weapontype>
+ 
+        <uses>10</uses>
+        <RNG>1</RNG>
+        <value>400</value>
+        <desc>Allows a unit to move again.</desc>
+        <status>Refresh_Status</status>
+        <target_restrict>target.isDone()</target_restrict>
+        
+        <LVL>A</LVL>
+        <targets>Ally</targets>
+
+        <map_hit_color>248,248,0</map_hit_color>    
+    </item>
+	
     <!-- Anima -->
     <item name="Wind Ward">
         <id>Wind</id>
