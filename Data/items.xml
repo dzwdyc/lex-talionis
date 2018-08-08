@@ -103,7 +103,7 @@
         <value>15</value>
         <RNG>1</RNG>
         <desc></desc>
-		<weight>6</weight>
+		<weight>8</weight>
         
 		<MT>8</MT>
 		<HIT>65</HIT>
@@ -121,7 +121,7 @@
         <value>30</value>
         <RNG>1</RNG>
         <desc></desc>
-		<weight>7</weight>
+		<weight>9</weight>
         
 		<MT>9</MT>
 		<HIT>60</HIT>
@@ -139,7 +139,7 @@
         <value>45</value>
         <RNG>1</RNG>
         <desc></desc>
-		<weight>8</weight>
+		<weight>10</weight>
         
 		<MT>11</MT>
 		<HIT>55</HIT>
@@ -157,7 +157,7 @@
         <value>60</value>
         <RNG>1</RNG>
         <desc></desc>
-		<weight>9</weight>
+		<weight>11</weight>
         
 		<MT>12</MT>
 		<HIT>50</HIT>
@@ -799,7 +799,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>40</uses>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <value>12</value>
         <desc></desc>
 		<weight>4</weight>
@@ -819,7 +819,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>35</uses>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <value>24</value>
         <desc></desc>
 		<weight>5</weight>
@@ -837,7 +837,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>30</uses>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <value>36</value>
         <desc></desc>
 		<weight>6</weight>
@@ -855,7 +855,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>25</uses>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <value>48</value>
         <desc></desc>
         <weight>7</weight>
@@ -873,7 +873,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>20</uses>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <value>60</value>
         <desc></desc>
         <weight>8</weight>
@@ -891,7 +891,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>30</uses>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <value>144</value>
         <desc>Allows two consecutive hits.</desc>
 		<weight>9</weight>
@@ -909,7 +909,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>20</uses>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <value>168</value>
         <desc>An upgraded but inaccurate brave weapon with a lot of power behind it.</desc>
 		<weight>10</weight>
@@ -927,7 +927,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>20</uses>
-        <RNG>2-4</RNG>
+        <RNG>2-3</RNG>
         <value>72</value>
         <desc></desc>
 		<weight>7</weight>
@@ -945,7 +945,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>15</uses>
-        <RNG>2-5</RNG>
+        <RNG>2-4</RNG>
         <value>144</value>
         <desc>A colossally-sized bow that can be fired over far distances.</desc>
         <weight>10</weight>
@@ -964,7 +964,7 @@
  
         <uses>15</uses>
         <value>180</value>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <desc>Grants wielder RES +10. Silences on hit.</desc>
 		<weight>6</weight>
         <status_on_equip>Resistance +10</status_on_equip>
@@ -984,7 +984,7 @@
         <weapontype>Bow</weapontype>
  
         <uses>40</uses>
-        <RNG>2-3</RNG>
+        <RNG>2</RNG>
         <value>15</value>
         <desc>Inflicts poison on hit.</desc>
         <status>Poison</status>
@@ -1132,7 +1132,7 @@
         <id>Unlock</id>
         <spritetype>Light</spritetype>
         <spriteid>9</spriteid>       
-        <components>spell,unlock,uses,status,beneficial,target_restrict,map_hit_color</components>
+        <components>spell,unlock,uses,status,target_restrict,map_hit_color</components>
         <weapontype>Light</weapontype>
  
         <uses>10</uses>
@@ -1469,7 +1469,7 @@
         <desc>Affects medium sized area.</desc>
         <aoe>Blast,1</aoe>
         
-		<damage>13</damage>
+		<damage>8</damage>
         <hit>45</hit>
         <LVL>B</LVL>
         <targets>Tile</targets>
@@ -1513,7 +1513,7 @@
         <desc>Lowers enemy avoid slightly on hit.</desc>
         <status>Chill</status>
 
-		<MT>3</MT>
+		<MT>4</MT>
 		<HIT>70</HIT>
 		<LVL>E</LVL>
 
@@ -1551,7 +1551,7 @@
         <value>75</value>
         <desc>Does half damage even on miss.</desc>
 
-		<MT>9</MT>
+		<MT>8</MT>
 		<HIT>60</HIT>
 		<LVL>C</LVL>
 
@@ -1570,29 +1570,29 @@
         <value>100</value>
         <desc></desc>
 
-		<MT>12</MT>
+		<MT>10</MT>
 		<HIT>55</HIT>
 		<LVL>B</LVL>
 
         <map_hit_color>-248,-248,-248</map_hit_color>
     </item>
 	
-    <item name="Poltergeist Ward">
-        <id>Poltergeist</id>
+    <item name="Demon Ward">
+        <id>Demon</id>
         <spritetype>Dark</spritetype>
         <spriteid>3</spriteid>       
         <components>weapon,uses,map_hit_color</components>
         <weapontype>Dark</weapontype>
  
-        <uses>10</uses>
+        <uses>15</uses>
         <RNG>1-2</RNG>
         <value>125</value>
         <desc>All primary stats +2.</desc>
         <status_on_equip>Strength +2,Magic +2,Skill +2,Speed +2,Luck +2,Defense +2,Resistance +2</status_on_equip>
 
-		<MT>15</MT>
+		<MT>12</MT>
 		<HIT>50</HIT>
-		<LVL>A</LVL>
+		<LVL>Noah</LVL>
 
         <map_hit_color>-248,-248,-248</map_hit_color>
     </item>

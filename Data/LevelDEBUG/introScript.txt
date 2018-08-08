@@ -1,6 +1,6 @@
 # Intro Script
 set_level_constant;telePower;0
-set_level_constant;timeToWyv;20
+set_level_constant;wyvTurnSpawn;0
 t;2
 set_camera_pan;1
 set_cursor;Noah

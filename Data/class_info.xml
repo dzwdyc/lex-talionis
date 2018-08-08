@@ -215,7 +215,7 @@
         <skills>1,Canto;5,Savior;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>100,45,5,55,35,40,20,30</growths>
-		<bases>12,3,0,2,3,0,4,0,7,7</bases>
+		<bases>12,4,0,3,4,0,3,0,7,7</bases>
 		<max>40,15,15,15,15,20,15,15,20</max>
         <desc>Mounted knights with superior movement.</desc>
     </class>   
@@ -255,7 +255,7 @@
         <skills>1,Provoke;5,Shove;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>105,55,15,40,20,35,55,35</growths>
-		<bases>12,3,0,2,1,0,6,1,9,4</bases>
+		<bases>12,6,0,2,1,0,6,1,9,4</bases>
 		<max>40,15,15,15,15,20,15,15,20</max>
         <desc>Heavily armored knights with superior defense but poor movement.</desc>
     </class>
@@ -372,7 +372,7 @@
         <!-- Light Foot, Armors, Heavy Cav, Light Cav, Regular, Mages -->
         <movement_group>0</movement_group>
         <tags></tags>
-        <skills>1,Prescience;1,Longshot;5,Critical;8,Feat</skills>
+        <skills>1,Prescience;1,SlayFlying;1,Longshot;5,Critical;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>95,45,40,55,45,45,20,25</growths>
 		<bases>12,3,0,2,3,0,2,0,5,5</bases>
@@ -455,7 +455,7 @@
         <skills>1,Healtouch;5,Miracle;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>65,15,40,55,45,70,15,65</growths>
-		<bases>11,0,1,1,1,0,0,4,4,5</bases>
+		<bases>11,0,3,1,1,0,0,4,4,5</bases>
 		<max>40,15,15,15,15,20,15,15,20</max>
         <desc>Kind-hearted healers.</desc>
     </class>
@@ -474,7 +474,7 @@
         <skills>3,Feat;5,Futuresight;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>65,15,40,55,45,70,15,65</growths>
-		<bases>14,0,3,3,2,0,3,6,5,6</bases>
+		<bases>14,0,5,3,2,0,3,6,5,6</bases>
         <promotion>3,0,2,2,1,0,3,2,1,1</promotion>
 		<max>40,15,17,19,17,20,15,20,20</max>
         <desc>Mages gifted with visions of the future.</desc>
@@ -495,7 +495,7 @@
         <skills>1,Focus;5,Conductance;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>75,15,75,45,65,40,20,45</growths>
-		<bases>11,0,1,1,3,0,1,2,4,5</bases>
+		<bases>11,0,3,1,3,0,1,2,4,5</bases>
 		<max>40,15,15,15,15,20,15,15,20</max>
         <desc>Curious practioners of anima magic.</desc>
     </class>
@@ -514,7 +514,7 @@
         <skills>3,Feat;5,Metamagic;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>75,15,75,45,65,40,20,45</growths>
-		<bases>15,0,2,2,2,0,4,5,5,6</bases>
+		<bases>15,0,4,2,2,0,4,5,5,6</bases>
         <promotion>4,0,1,1,0,0,3,3,1,1</promotion>
 		<max>40,15,19,17,18,20,15,18,20</max>
         <desc>Advanced wielders of the natural magics.</desc>
@@ -535,7 +535,7 @@
         <skills>1,Hex;5,Empowered;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>65,20,65,45,40,25,25,55</growths>
-		<bases>11,1,2,1,1,0,1,3,5,4</bases>
+		<bases>11,1,5,1,1,0,1,3,5,4</bases>
 		<max>40,15,15,15,15,20,15,15,20</max>
         <desc>Impulsive mages with a tenous grasp on their magic.</desc>
     </class>
@@ -554,7 +554,7 @@
         <skills>3,Feat;5,Metamagic;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>65,20,65,45,40,25,25,55</growths>
-		<bases>15,1,4,3,4,0,3,5,6,5</bases>
+		<bases>15,1,7,3,4,0,3,5,6,5</bases>
         <promotion>4,0,2,2,3,0,2,2,1,1</promotion>
 		<max>40,15,19,17,17,20,15,19,20</max>
         <desc>War shaman capable of incredible feats of magic.</desc>
