@@ -255,7 +255,7 @@
         <skills>1,Provoke;5,Shove;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>105,55,15,40,20,35,55,35</growths>
-		<bases>12,6,0,2,1,0,6,1,9,4</bases>
+		<bases>12,5,0,2,1,0,6,1,9,4</bases>
 		<max>40,15,15,15,15,20,15,15,20</max>
         <desc>Heavily armored knights with superior defense but poor movement.</desc>
     </class>
@@ -676,7 +676,7 @@
         <skills>1,Patience;5,Defense_Aura;8,Feat</skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>100,45,15,25,35,25,40,35</growths>
-		<bases>13,5,0,3,1,0,5,0,9,4</bases>
+		<bases>13,5,0,3,1,0,6,0,9,4</bases>
 		<max>40,15,15,15,15,20,15,15,20</max>
         <desc>Armored bruisers who work well on a team.</desc>
     </class>  
@@ -695,7 +695,7 @@
         <skills></skills>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res, Con -->
 		<growths>95,45,0,55,0,45,20,25</growths>
-		<bases>12,6,0,2,2,0,2,0,2,0</bases>
+		<bases>12,3,0,2,2,0,2,0,2,0</bases>
 		<max>40,17,15,20,15,20,17,16,20</max>
         <desc>Long-range immobile siege weapons.</desc>
     </class> 

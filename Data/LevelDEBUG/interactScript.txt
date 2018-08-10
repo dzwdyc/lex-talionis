@@ -1,3 +1,9 @@
 #if;gameStateObj.check_dead('Anders')
 #    win_game
 #end
+
+# has our party size fallen below four?
+if;gameStateObj.get_total_party_members() < 5
+	minimum_number_banner
+	lose_game
+	t;1

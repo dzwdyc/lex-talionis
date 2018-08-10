@@ -2,12 +2,6 @@ set_origin
 if;self.name == 'NavigationSwitch'
 	if;gameStateObj.level_constants['telePower'] >= 3
 		set_tile_info;o0,0
-		if;gameStateObj.level_constants['telePower'] >= 5
-			#Gain point of pride
-			#Dialogue regarding transporting to Arundel
-		else
-			#Dialogue regarding transporting to Valeria
-		end
 		# change_tile_sprite;o0,0;pulled_nav_switch
 		set_level_constant;teleCoordinates;1
 		change_tile_sprite;13,19;WarpPanelGolden
@@ -26,13 +20,14 @@ else
 		if;gameStateObj.level_constants['telePower'] == 3
 			change_tile_sprite;13,19;WarpPanelRed
 		end
-	elif;self.name == 'PrisonSwitch'
-		change_tile_sprite;3,16;OpenHorizontalPassage
-		replace_tile;3,16;9
-		change_tile_sprite;3,22;OpenHorizontalPassage
-		replace_tile;3,22;9
 	end
 end
+	#if;self.name == 'PrisonSwitch'
+	#	change_tile_sprite;3,16;OpenHorizontalPassage
+	#	replace_tile;3,16;9
+	#	change_tile_sprite;3,22;OpenHorizontalPassage
+	#	replace_tile;3,22;9
+	#end
 
 
 

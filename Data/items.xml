@@ -1026,9 +1026,9 @@
         <desc>Lowers enemy accuracy slightly on hit.</desc>
         <status>Dazzle</status>
 
-		<MT>2</MT>
-		<HIT>100</HIT>
-		<LVL>E</LVL>
+		<MT>3</MT>
+		<HIT>95</HIT>
+		<LVL>D</LVL>
 
         <map_hit_color>248,248,128</map_hit_color>
     </item>

@@ -8,7 +8,7 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>D,0,0,0,0,0,E</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>13,4,3,4,5,5,2,8,7</bases>
+        <bases>14,4,3,5,5,5,3,8,7</bases>
         <growths>95,55,40,60,60,50,40,100</growths>
         
         <inventory>Iron Sword,Elixir_1</inventory>
@@ -28,8 +28,8 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>0,0,E,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>14,6,0,3,5,5,5,1,6,7</bases>
-        <growths>110,60,5,40,60,60,60,45</growths>
+        <bases>14,6,0,3,5,5,5,1,7,7</bases>
+        <growths>110,65,5,40,55,65,65,20</growths>
         
         <inventory>Iron Axe,Elixir_1,Wyvern Tear</inventory>
         
@@ -49,7 +49,7 @@
         <wexp>0,0,0,0,0,D,E</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>11,2,3,5,8,8,1,3,3</bases>
-        <growths>60,35,40,50,70,80,30,55</growths>
+        <growths>60,35,40,50,70,80,30,30</growths>
         
         <inventory>Fire,Shatter,Elixir_1</inventory>
         
@@ -66,7 +66,7 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,0,0,C,0,0,E</wexp>
+        <wexp>0,0,0,C,0,0,D</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>14,5,2,6,5,2,2,2,6</bases>
         <growths>80,60,30,60,60,25,35,50</growths>
@@ -88,8 +88,8 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>0,D,0,D,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>16,8,0,7,3,3,8,0,9</bases>
-        <growths>120,70,5,70,30,30,70,5</growths>
+        <bases>16,8,0,7,3,3,8,2,9</bases>
+        <growths>120,70,5,70,30,30,70,60</growths>
         
         <inventory>Iron Lance,Javelin,Iron Bow</inventory>
         
@@ -108,8 +108,8 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>0,0,0,0,C,E,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>12,0,6,7,6,6,1,5,4</bases>
-        <growths>70,20,50,55,55,50,35,60</growths>
+        <bases>12,0,6,7,4,6,1,5,4</bases>
+        <growths>70,20,50,55,50,50,35,60</growths>
         
         <inventory>Glimmer,Unlock,Heal,Elixir_1</inventory>
         
@@ -129,7 +129,7 @@
         <wexp>D,0,0,E,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>11,4,0,4,8,8,3,1,5</bases>
-        <growths>75,45,5,45,75,65,35,35</growths>
+        <growths>75,45,5,45,75,65,35,25</growths>
         
         <inventory>Iron Sword,Iron Bow,Elixir_1</inventory>
         
@@ -149,7 +149,7 @@
         <wexp>C,0,0,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>16,5,5,10,10,3,5,7,5,7</bases>
-        <growths>70,25,25,85,85,20,25,50</growths>
+        <growths>70,25,25,85,85,20,25,40</growths>
         
         <inventory>Steel Sword,Elixir_1,Skeleton Key</inventory>
         
@@ -169,9 +169,9 @@
         <wexp>0,D,0,0,E,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
         <bases>12,3,1,6,6,6,1,1,6</bases>
-        <growths>75,50,25,70,70,70,40,35</growths>
+        <growths>75,50,25,70,70,70,30,30</growths>
         
-        <inventory>Iron Lance,Elixir_1,Skeleton Key,Skeleton Key</inventory>
+        <inventory>Iron Lance,Heal,Flux,Skeleton Key,Skeleton Key</inventory>
         
         <level>1</level>
         <class>Skirmisher</class>
