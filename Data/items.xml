@@ -1569,7 +1569,7 @@
         <value>75</value>
         <desc>Does half damage even on miss.</desc>
 
-		<MT>8</MT>
+		<MT>9</MT>
 		<HIT>60</HIT>
 		<LVL>C</LVL>
 
@@ -1586,11 +1586,30 @@
         <uses>15</uses>
         <RNG>1-2</RNG>
         <value>100</value>
-        <desc></desc>
+        <desc>Incredibly accurate and deadly.</desc>
 
-		<MT>10</MT>
-		<HIT>55</HIT>
+		<MT>11</MT>
+		<HIT>80</HIT>
 		<LVL>B</LVL>
+
+        <map_hit_color>-248,-248,-248</map_hit_color>
+    </item>
+	
+    <item name="Fenrir Ward">
+        <id>Fenrir</id>
+        <spritetype>Dark</spritetype>
+        <spriteid>3</spriteid>       
+        <components>weapon,uses,map_hit_color</components>
+        <weapontype>Dark</weapontype>
+ 
+        <uses>15</uses>
+        <RNG>1-2</RNG>
+        <value>125</value>
+        <desc>The strongest conventional form of battle magic.</desc>
+
+		<MT>14</MT>
+		<HIT>50</HIT>
+		<LVL>A</LVL>
 
         <map_hit_color>-248,-248,-248</map_hit_color>
     </item>
@@ -1696,7 +1715,7 @@
         <map_hit_color>-248,-248,-248</map_hit_color>
     </item>
 	
-	 <item name="Infernal Invigoration">
+	 <item name="TBD LOL">
         <id>DarkAgain</id>
         <spritetype>Light</spritetype>
         <spriteid>6</spriteid>       
@@ -1891,7 +1910,7 @@
     </item>
 
     <item name="Power Ring">
-        <id>Energy Ring</id>
+        <id>Power Ring</id>
         <spritetype>Boosters</spritetype>
         <spriteid>1</spriteid>       
         <components>usable,uses,permanent_stat_increase,booster,beneficial</components>

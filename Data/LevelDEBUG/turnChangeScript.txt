@@ -1,24 +1,31 @@
 # Turn Change Script
 # Unused
 inc_level_constant;wyvTurnSpawn
-if;gameStateObj.turncount == 3
-    set_cursor;TopStair2
+inc_level_constant;thiefCounter
+if;gameStateObj.level_constants['thiefCounter'] == 3
+    set_cursor;11,3
     wait;200
     add_unit;Thief1_1;rTopStair1
     wait;200
 end
-if;gameStateObj.turncount == 7
+if;gameStateObj.level_constants['thiefCounter'] == 7
 	change_ai;Thief1_1;Unlock3
 end
 if;gameStateObj.level_constants['wyvTurnSpawn'] == 15
+	set_cursor;13,36
+    wait;200
 	add_unit;Wyv1_1;rBottom1
 	add_unit;Wyv1_2;rBottom2
 	add_unit;Wyv1_3;rBottom3
 	add_unit;Wyv1_4;rBottom4
 	add_unit;Leon_1;rBoss1
+	wait;200
 elif;gameStateObj.level_constants['wyvTurnSpawn'] == 17
+	set_cursor;13,36
+    wait;200
 	add_unit;Wyv2_1;rBottom1
 	add_unit;Wyv2_2;rBottom2
 	add_unit;Wyv2_3;rBottom3
 	add_unit;Wyv2_4;rBottom4
+	wait;200
 end

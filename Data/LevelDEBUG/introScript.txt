@@ -1,6 +1,25 @@
 # Intro Script
 set_level_constant;telePower;0
 set_level_constant;wyvTurnSpawn;0
+set_level_constant;thiefCounter;0
+
+if;gameStateObj.mode['name'] == 'Normal'
+elif;gameStateObj.mode['name'] == 'Hard'
+	set_level_constant;wyvTurnSpawn;2
+	set_level_constant;thiefCounter;1
+elif;gameStateObj.mode['name'] == 'Lunatic'
+	set_level_constant;wyvTurnSpawn;4
+	set_level_constant;thiefCounter;1
+else
+	t;1
+	b;BlackBackground
+	t;2
+	u;Kalin;Left;u;Noah;Right
+	s;Kalin;Ah a bug! Rainlash help!
+	s;Noah;Uh, yeah, what she said.
+	t;1
+	lose_game
+end
 t;2
 set_camera_pan;1
 set_cursor;Noah

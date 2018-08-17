@@ -8,10 +8,10 @@
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
         <wexp>D,0,0,0,0,0,E</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>14,4,3,5,5,5,3,8,7</bases>
-        <growths>95,55,40,60,60,50,40,100</growths>
+        <bases>14,4,2,5,5,5,3,8,7</bases>
+        <growths>95,55,30,60,60,50,40,100</growths>
         
-        <inventory>Iron Sword,Elixir_1</inventory>
+        <inventory>Iron Sword,Rapier,Elixir_1</inventory>
         
         <level>2</level>
         <class>Lord</class>
@@ -171,14 +171,14 @@
         <bases>12,3,1,6,6,6,1,1,6</bases>
         <growths>75,50,25,70,70,70,30,30</growths>
         
-        <inventory>Iron Lance,Heal,Flux,Skeleton Key,Skeleton Key</inventory>
+        <inventory>Iron Lance,Heal,Flux,Skeleton Key</inventory>
         
         <level>1</level>
         <class>Skirmisher</class>
         <desc>TBD</desc>
         
         <tags></tags>
-        <skills></skills>
+        <skills>Healtouch</skills>
     </unit>
 
     <unit name="Anders">

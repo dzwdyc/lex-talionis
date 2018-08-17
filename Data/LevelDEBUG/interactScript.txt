@@ -3,7 +3,7 @@
 #end
 
 # has our party size fallen below four?
-if;gameStateObj.get_total_party_members() < 5
-	minimum_number_banner
-	lose_game
-	t;1
+#if;gameStateObj.get_total_party_members() < 5
+#	minimum_number_banner
+#	lose_game
+#	t;1
