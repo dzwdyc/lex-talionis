@@ -1,4 +1,3 @@
-
 # UnitLevel.txt is used to define what units will be part of this level and where they will spawn
 # 
 # Each unit belongs on its own line
@@ -18,76 +17,95 @@
 # ai refers to what kind of AI the unit should possess.
 #
 # --------------------------------------------
-faction;Arundel;Arundel;Knight;A soldier of Arundel
-faction;Byrak;Byrak;Bandit;A soldier of Byrak
+faction;Fulmor;Soldier;Empire;A Fulmor Soldier
+faction;Valeria;Soldier;Confederacy;A Captured Valerian Soldier
 # Player Characters
-player;0;0;Noah;9,13;None
-player;0;0;Kalin;8,13;None
-player;0;0;Knight;1;Iron Lance;9,10;None;Arundel
-player;0;0;Thief;1;Iron Sword;10,11;None;Arundel
-player;0;0;Cleric;1;Glimmer,Heal;8,11;None;Arundel
-player;0;0;Archer;1;Willow Bow;9,12;None;Arundel
+player;0;0;Owen;25,18;None
+player;0;0;Celeste;26,18;None
+player;0;0;Clyde;26,20;None
+player;0;0;Lucia;25,20;None
+player;0;0;Noah;25,19;None
+player;0;0;Lily;26,19;None
+player;0;0;Tomoe;4,14;None
+player;0;0;Edessa;2,14;None
+# Other Characters
+other;0;0;Citizen;1;;26,23;Escape;Valeria
+other;0;0;Citizen;1;;26,15;Escape;Valeria
+other;0;0;Citizen;1;;22,15;Escape;Valeria
+other;0;0;Citizen;1;;22,23;Escape;Valeria
 # Enemies
+# Bosses
+enemy;0;0;CmdrKalin;13,8;HardGuard
 # Generics
-enemy;0;0;Archer;1;Willow Bow;17,4;Attack;Byrak
-enemy;0;0;Archer;1;Willow Bow;13,2;Attack;Byrak
-enemy;0;0;Archer;1;Willow Bow;7,0;Attack;Byrak
-enemy;0;0;Archer;1;Willow Bow;2,12;SoftGuard;Byrak
-enemy;0;0;Archer;1;Willow Bow;5,20;Attack;Byrak
-enemy;0;0;Archer;1;Willow Bow;13,17;SoftGuard;Byrak
-enemy;0;0;Archer;1;Willow Bow;16,2;SoftGuard;Byrak
-enemy;0;0;Myrmidon;1;Iron Sword;5,0;Attack;Byrak
-enemy;0;0;Myrmidon;1;Iron Sword;5,3;SoftGuard;Byrak
-enemy;0;0;Myrmidon;1;Iron Sword;4,13;Attack;Byrak
-enemy;0;0;Myrmidon;1;Iron Sword;4,16;Attack;Byrak
-enemy;0;0;Myrmidon;1;Iron Sword;2,20;SoftGuard;Byrak
-enemy;0;0;Myrmidon;1;Iron Sword;13,19;Attack;Byrak
-enemy;0;0;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
-enemy;0;0;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
-enemy;0;0;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
+mode;Hard,Lunatic
+enemy;0;0;Ballista;2;Ballista;11,35;HardGuard;Fulmor
+enemy;0;0;Ballista;2;Ballista;15,35;HardGuard;Fulmor
+enemy;0;0;Sentinel;2;Iron Axe;15,19;Attack;Fulmor
+enemy;0;0;Dracoknight;4;Steel Axe,Hand Axe;10,35;SoftGuard;Fulmor
+enemy;0;0;Dracoknight;4;Steel Axe,Hand Axe;16,35;SoftGuard;Fulmor
+enemy;0;0;Mage;2;Wind;7,18;SoftGuard;Fulmor
+enemy;0;0;Mage;2;Wind;7,20;SoftGuard;Fulmor
+enemy;0;0;Mage;2;Fire;32,0;PursueIgnoreOther;Fulmor
+enemy;0;0;Mage;2;Fire;30,2;PursueIgnoreOther;Fulmor
+mode;Lunatic
+enemy;0;0;Dracoknight;4;Steel Axe,Hand Axe;10,33;SoftGuard;Fulmor
+enemy;0;0;Dracoknight;4;Steel Axe,Hand Axe;16,33;SoftGuard;Fulmor
+enemy;0;0;Mage;2;Meteor;7,25;SoftGuard;Fulmor
+enemy;0;0;Mage;2;Meteor;7,13;SoftGuard;Fulmor
+enemy;0;0;Cavalier;3;Iron Sword;29,17;PursueIgnoreOther;Fulmor
+enemy;0;0;Cavalier;3;Iron Lance;30,18;PursueIgnoreOther;Fulmor
+enemy;0;0;Cavalier;3;Iron Sword;31,19;PursueIgnoreOther;Fulmor
+mode;Normal,Hard,Lunatic
+enemy;0;0;Ballista;2;Ballista;18,14;HardGuard;Fulmor
+enemy;0;0;Ballista;2;Ballista;18,24;HardGuard;Fulmor
+enemy;0;0;Ballista;2;Ballista;8,14;HardGuard;Fulmor
+enemy;0;0;Ballista;2;Ballista;8,24;HardGuard;Fulmor
+enemy;0;0;Knight;3;Iron Lance;20,18;SoftGuard;Fulmor
+enemy;0;0;Sentinel;3;Iron Axe,dSkeleton Key;20,19;SoftGuard;Fulmor
+enemy;0;0;Knight;3;Iron Lance;20,20;SoftGuard;Fulmor
+enemy;0;0;Knight;2;Iron Lance;12,26;SoftGuard;Fulmor
+enemy;0;0;Knight;2;Iron Lance;13,26;SoftGuard;Fulmor
+enemy;0;0;Knight;2;Iron Lance;14,26;SoftGuard;Fulmor
+enemy;0;0;Sentinel;7;Hand Axe;13,19;HardGuard;Fulmor
+enemy;0;0;Sentinel;7;Hand Axe;13,35;HardGuard;Fulmor
+enemy;0;0;Sentinel;2;Iron Axe;15,18;SoftGuard;Fulmor
+enemy;0;0;Sentinel;2;Iron Axe;15,20;SoftGuard;Fulmor
+enemy;0;0;Shaman;7;Nyx;3,24;HardGuard;Fulmor;Rex_Aegis
+enemy;0;0;Mage;7;Elwind;17,28;HardGuard;Fulmor
+enemy;0;0;Mage;2;Fire;30,0;PursueIgnoreOther;Fulmor
+enemy;0;0;Mage;2;Fire;31,1;PursueIgnoreOther;Fulmor
+enemy;0;0;Mage;2;Fire;32,2;PursueIgnoreOther;Fulmor
+enemy;0;0;Mercenary;2;Iron Sword;2,18;SoftGuard;Fulmor
+enemy;0;0;Mercenary;2;Iron Sword;4,18;SoftGuard;Fulmor
+enemy;0;0;Mercenary;2;Iron Sword;3,19;SoftGuard;Fulmor
+enemy;0;0;Mercenary;2;Iron Sword;2,20;SoftGuard;Fulmor
+enemy;0;0;Mercenary;2;Iron Sword;4,20;SoftGuard;Fulmor
+enemy;0;0;Mage;2;dWind;7,19;SoftGuard;Fulmor
+enemy;0;0;Shaman;2;dFlux;15,17;SoftGuard;Fulmor
+enemy;0;0;Shaman;2;Flux;15,21;SoftGuard;Fulmor
+enemy;0;0;Dracoknight;2;Iron Axe;12,3;SoftGuard;Fulmor
+enemy;0;0;Dracoknight;2;Iron Axe;14,3;SoftGuard;Fulmor
+enemy;0;0;Dracoknight;2;Iron Axe;13,4;SoftGuard;Fulmor
+enemy;0;0;Sentinel;7;Hand Axe,dPower Ring;26,34;HardGuard;Fulmor
+enemy;0;0;Mage;2;Meteor;8,36;HardGuard;Fulmor
+enemy;0;0;Mage;2;Meteor;18,36;HardGuard;Fulmor
+enemy;0;0;Archer;2;Iron Bow;17,13;SoftGuard;Fulmor
+enemy;0;0;Archer;2;Iron Bow;19,13;SoftGuard;Fulmor
+enemy;0;0;Archer;2;Iron Bow;17,25;SoftGuard;Fulmor
+enemy;0;0;Archer;2;Iron Bow;19,25;SoftGuard;Fulmor
 # === Reinforcements ===
 # Player Characters
 # Enemies
+# Bosses
+enemy;0;Leon_1;Leon;13,36;Pursue
 # Generics
-enemy;0;pack1_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
-enemy;0;pack1_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
-enemy;0;pack1_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
-enemy;0;pack1_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
-enemy;0;pack1_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
-enemy;0;pack1_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
-enemy;0;pack2_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
-enemy;0;pack2_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
-enemy;0;pack2_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
-enemy;0;pack2_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
-enemy;0;pack2_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
-enemy;0;pack2_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
-enemy;0;pack3_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
-enemy;0;pack3_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
-enemy;0;pack3_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
-enemy;0;pack3_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
-enemy;0;pack3_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
-enemy;0;pack3_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
-enemy;0;pack4_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
-enemy;0;pack4_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
-enemy;0;pack4_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
-enemy;0;pack4_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
-enemy;0;pack4_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
-enemy;0;pack4_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
-enemy;0;pack5_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
-enemy;0;pack5_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
-enemy;0;pack5_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
-enemy;0;pack5_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
-enemy;0;pack5_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
-enemy;0;pack5_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
-enemy;0;pack6_1;Brigand;1;Iron Axe;17,9;PursueVillage;Byrak
-enemy;0;pack6_2;Brigand;1;Iron Axe;17,11;PursueVillage;Byrak
-enemy;0;pack6_3;Brigand;1;Iron Axe;17,13;PursueVillage;Byrak
-enemy;0;pack6_4;Brigand;1;Iron Axe;3,0;PursueVillage;Byrak
-enemy;0;pack6_5;Archer;1;Willow Bow;7,0;Pursue;Byrak
-enemy;0;pack6_6;Myrmidon;1;Iron Sword;5,0;Pursue;Byrak
+enemy;0;Thief1_2;Thief;2;Iron Sword;11,3;ThiefEscape;Fulmor
+enemy;0;Wyv1_1;Dracoknight;3;Hand Axe;11,36;Pursue;Fulmor
+enemy;0;Wyv1_2;Dracoknight;3;Hand Axe;12,36;Pursue;Fulmor
+enemy;0;Wyv1_3;Dracoknight;3;Hand Axe;14,36;Pursue;Fulmor
+enemy;0;Wyv1_4;Dracoknight;3;Hand Axe;15,36;Pursue;Fulmor
+enemy;0;Wyv2_1;Dracoknight;3;Hand Axe;11,36;Pursue;Fulmor
+enemy;0;Wyv2_2;Dracoknight;3;Hand Axe;12,36;Pursue;Fulmor
+enemy;0;Wyv2_3;Dracoknight;3;Hand Axe;14,36;Pursue;Fulmor
+enemy;0;Wyv2_4;Dracoknight;3;Hand Axe;15,36;Pursue;Fulmor
 # === Triggers ===
-trigger;PlayerSpawn;8,11;9,10;8,11
-trigger;PlayerSpawn;10,11;9,10;10,11
-trigger;PlayerSpawn;Noah;9,10;9,13
-trigger;PlayerSpawn;9,12;9,10;9,12
-trigger;PlayerSpawn;Kalin;9,10;8,13

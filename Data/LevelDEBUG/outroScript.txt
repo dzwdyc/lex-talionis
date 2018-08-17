@@ -3,16 +3,5 @@ t;1
 b;BlackBackground
 t;2
 u;Kalin;Left;u;Noah;Right
-s;Kalin;That was boring.{w}{br}Your storytelling is boring.{w}{brYou're boring. 
-s;Noah;Well what do you want then?
-s;Kalin;I want my turn to make a scenario!
-s;Noah;Didn't you basically do that this time?
-s;Kalin;Hmph. It was either that or it be boring. 
-s;Noah;Yeah, because your character was so interesting.
-s;Kalin;At least my character had personality.{w}{br}What's with all these blue nameless units?{w}{br}You literally have known figures in this very castle that could take those spots.
-s;Noah;Well that's all that's necessary!{w}{br}I give orders and my subordinates follow them.
-s;Kalin;That's not how battles really go.{w}{br}They're not soldiers, they're people in soldier outfits.{w}{br}Let's try it again.
-s;Noah;...
-s;Kalin;C'mon, just give it a chance.{w}{br}You never know what'll happen.
-s;Noah;Fine, we'll try it your way.
+s;Noah;And that's a win!{w}{br}Thanks for playing!
 t;1

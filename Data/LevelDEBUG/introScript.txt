@@ -1,33 +1,26 @@
 # Intro Script
-set_level_constant;VillagesDestroyed;0
-set_level_constant;VillagesSecured;0
+set_level_constant;telePower;0
+set_level_constant;wyvTurnSpawn;0
+set_level_constant;thiefCounter;0
+
+if;gameStateObj.mode['name'] == 'Normal'
+elif;gameStateObj.mode['name'] == 'Hard'
+	set_level_constant;wyvTurnSpawn;2
+	set_level_constant;thiefCounter;1
+elif;gameStateObj.mode['name'] == 'Lunatic'
+	set_level_constant;wyvTurnSpawn;4
+	set_level_constant;thiefCounter;1
+else
+	t;1
+	b;BlackBackground
+	t;2
+	u;Kalin;Left;u;Noah;Right
+	s;Kalin;Ah a bug! Rainlash help!
+	s;Noah;Uh, yeah, what she said.
+	t;1
+	lose_game
+end
 t;2
 set_camera_pan;1
 set_cursor;Noah
-trigger;PlayerSpawn
-# Noah is going to speak
-set_cursor;Noah
-disp_cursor;1
-wait;1000
-disp_cursor;0
-u;Noah;Right
-s;Noah;Alright, team, Byrak is invading.{w}{br}We need to stop them from destroying all of the villagers,{w}{br}while also defending Arundel Castle.
-u;Kalin;Left
-bop;Kalin
-s;Kalin;Let's give them a taste of Arundel justice!
-# Remove Noah and Kalin from the scene
-t;1
-qr;Noah;Kalin
-b;BlackBackground
-t;2
-s;Noah;Kalin, Arundel justice is diplomacy.
-s;Kalin;That doesn't matter, Noah. It sounded cool!
-s;Noah;Also, why did you place enemies to the south and south west?{w}{br}Byrak wouldn't invade from there!
-s;Kalin;Because it's supposed to be challenging, duh!{w}{br}That's also why we didn't add the Falcoknight.
-s;Noah;It's called realism, Kalin.
-s;Kalin;Then why'd you put all those archers in the upper right?
-s;Noah;So you couldn't just fly in there.{w}{br}Byrak has archers you know.
-s;Kalin;Hmph, fine!
-t;1
-remove_background
-t;2
+trigger;PlayerEntrance

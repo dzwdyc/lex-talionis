@@ -6,19 +6,19 @@
         <gender>0</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>1,0,0,0,0,0,0</wexp>
+        <wexp>D,0,0,0,0,0,E</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>13,3,3,4,5,5,2,6,8</bases>
-        <growths>95,55,40,50,50,50,40,100</growths>
+        <bases>14,4,2,5,5,5,3,8,7</bases>
+        <growths>95,55,30,60,60,50,40,100</growths>
         
-        <inventory>Iron Sword,Barkskin,Elixir_1</inventory>
+        <inventory>Iron Sword,Rapier,Elixir_1</inventory>
         
-        <level>1</level>
+        <level>2</level>
         <class>Lord</class>
         <desc>A confused little boi.</desc>
         
         <tags>Lord</tags>
-        <skills>Savior</skills>
+        <skills></skills>
     </unit>
 
     <unit name="Kalin">
@@ -26,10 +26,10 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,0,1,0,0,0,0</wexp>
+        <wexp>0,0,E,0,0,0,0</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>14,5,0,3,4,5,5,1,8,7</bases>
-        <growths>100,60,0,40,45,60,60,20</growths>
+        <bases>14,6,0,3,5,5,5,1,7,7</bases>
+        <growths>110,65,5,40,55,65,65,20</growths>
         
         <inventory>Iron Axe,Elixir_1,Wyvern Tear</inventory>
         
@@ -41,19 +41,19 @@
         <skills></skills>
     </unit>
 	
-	    <unit name="Lily">
+	<unit name="Lily">
         <id>Lily</id>
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,0,0,0,0,1,0</wexp>
+        <wexp>0,0,0,0,0,D,E</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>11,2,3,5,8,8,1,3,4</bases>
-        <growths>60,35,40,50,70,80,30,50</growths>
+        <bases>11,2,3,5,8,8,1,3,3</bases>
+        <growths>60,35,40,50,70,80,30,30</growths>
         
-        <inventory>Fire,Elixir_1</inventory>
+        <inventory>Fire,Shatter,Elixir_1</inventory>
         
-        <level>1</level>
+        <level>2</level>
         <class>Mage</class>
         <desc>Another smol genki girl.</desc>
         
@@ -66,19 +66,119 @@
         <gender>5</gender>
         
         <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
-        <wexp>0,0,0,1,0,0,0</wexp>
+        <wexp>0,0,0,C,0,0,D</wexp>
         <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
-        <bases>13,4,3,5,5,2,2,2,7</bases>
-        <growths>80,60,60,60,60,25,35,50</growths>
+        <bases>14,5,2,6,5,2,2,2,6</bases>
+        <growths>80,60,30,60,60,25,35,50</growths>
         
-        <inventory>Willow Bow,Elixir_1</inventory>
+        <inventory>Iron Bow,Elixir_1</inventory>
         
-        <level>1</level>
+        <level>2</level>
         <class>Archer</class>
         <desc>Queenie McBeanie</desc>
         
         <tags></tags>
         <skills></skills>
+    </unit>
+	
+	<unit name="Owen">
+        <id>Owen</id>
+        <gender>0</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>0,D,0,D,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>16,8,0,7,3,3,8,2,9</bases>
+        <growths>120,70,5,70,30,30,70,60</growths>
+        
+        <inventory>Iron Lance,Javelin,Iron Bow</inventory>
+        
+        <level>2</level>
+        <class>Knight</class>
+        <desc>TBD</desc>
+        
+        <tags></tags>
+        <skills></skills>
+    </unit>
+	
+	<unit name="Lucia">
+        <id>Lucia</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>0,0,0,0,C,E,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>12,0,6,7,4,6,1,5,4</bases>
+        <growths>70,20,50,55,50,50,35,60</growths>
+        
+        <inventory>Glimmer,Unlock,Heal,Elixir_1</inventory>
+        
+        <level>2</level>
+        <class>Cleric</class>
+        <desc>TBD</desc>
+        
+        <tags></tags>
+        <skills></skills>
+    </unit>
+	
+	<unit name="Clyde">
+        <id>Clyde</id>
+        <gender>0</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>D,0,0,E,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>11,4,0,4,8,8,3,1,5</bases>
+        <growths>75,45,5,45,75,65,35,25</growths>
+        
+        <inventory>Iron Sword,Iron Bow,Elixir_1</inventory>
+        
+        <level>2</level>
+        <class>Thief</class>
+        <desc>TBD</desc>
+        
+        <tags></tags>
+        <skills></skills>
+    </unit>
+	
+	<unit name="Celeste">
+        <id>Celeste</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>C,0,0,0,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>16,5,5,10,10,3,5,7,5,7</bases>
+        <growths>70,25,25,85,85,20,25,40</growths>
+        
+        <inventory>Steel Sword,Elixir_1,Skeleton Key</inventory>
+        
+        <level>7</level>
+        <class>Dracoknight</class>
+        <desc>TBD</desc>
+        
+        <tags></tags>
+        <skills>fMovement +1</skills>
+    </unit>
+	
+	<unit name="Tomoe">
+        <id>Tomoe</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>0,D,0,0,E,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>12,3,1,6,6,6,1,1,6</bases>
+        <growths>75,50,25,70,70,70,30,30</growths>
+        
+        <inventory>Iron Lance,Heal,Flux,Skeleton Key</inventory>
+        
+        <level>1</level>
+        <class>Skirmisher</class>
+        <desc>TBD</desc>
+        
+        <tags></tags>
+        <skills>Healtouch</skills>
     </unit>
 
     <unit name="Anders">
@@ -98,6 +198,66 @@
         <desc>Wasn't he in the Lion Throne...</desc>
         
         <tags>Boss</tags>
+        <skills></skills>
+    </unit>
+	
+	<unit name="Arabella">
+        <id>Arabella</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>0,A,C,0,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>24,12,3,5,5,6,12,3,8,8</bases>
+        <growths>0,0,0,0,0,0,0,0</growths>
+        
+        <inventory>dSuperior Lance,dPride_1</inventory>
+        
+        <level>5</level>
+        <class>Dracolord</class>
+        <desc>A general of the Fulmor Army.</desc>
+        
+        <tags>Boss</tags>
+        <skills></skills>
+    </unit>
+	
+	<unit name="Leon">
+        <id>Leon</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>0,C,A,0,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>19,10,0,10,10,8,10,5,7,8</bases>
+        <growths>0,0,0,0,0,0,0,0</growths>
+        
+        <inventory>Mithril Axe,dPride_1</inventory>
+        
+        <level>5</level>
+        <class>Dracolord</class>
+        <desc>A general of the Fulmor Air Force.</desc>
+        
+        <tags>Boss</tags>
+        <skills></skills>
+    </unit>
+	
+	<unit name="CmdrKalin">
+        <id>CmdrKalin</id>
+        <gender>5</gender>
+        
+        <!-- Swords, Lances, Axes, Bows, Light, Anima, Dark -->
+        <wexp>0,A,A,0,0,0,0</wexp>
+        <!-- HP, Str, Mag, Skl, Spd, Lck, Def, Res -->
+        <bases>25,12,0,3,10,5,10,3,6,7</bases>
+        <growths>0,0,0,0,0,0,0,0</growths>
+        
+        <inventory>Javelin</inventory>
+        
+        <level>11</level>
+        <class>Dracolord</class>
+        <desc>A fearsome dragon knight of unparalleled skill.</desc>
+        
+        <tags></tags>
         <skills></skills>
     </unit>
 
@@ -171,7 +331,7 @@
 		<bases>13,4,2,5,5,3,2,1</bases>
 		<growths>80,55,35,80,80,25,20,40</growths>
         
-        <inventory>Willow Bow,Vulnerary</inventory>
+        <inventory>Iron Bow,Vulnerary</inventory>
         
         <level>3</level>
         <class>Archer</class>

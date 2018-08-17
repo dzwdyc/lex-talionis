@@ -1,0 +1,36 @@
+Weapon Identity
+
+Base Weapon				Mt		Hit		Wt		Uses	Value	Rng
+Sword					3		85		3		40		10		1
+Lance					5		80		4		40		14		1
+Axe						6		70		6		40		8		1
+Bow						5		80		4		40		12		2~3
+Light					2		100		-		30		15		1~2	
+Anima					4		80		-		35		20		1~2
+Darkness				5		70		-		30		25		1~2
+
+Progression		Rank	Mt		Hit		Wt		Uses	Value	Rng
+Standard Rank	+1		+2		-5		+1		-5		+Base
+Blade 			+1		+5		-20		+5		-5		+5		
+Blade Rank		+1		+3/2	-5		+1		-5		+15		
+Magic Sword		+1		-1		+5		+3		-15		+30		1~2 Magic
+MSword Rank		+1		+2		-15		+1		0		+20		1~2 Magic
+Throwable		0		-1		-10		+2		-20		*2		1~2
+Throwable Rank	+1		+1		-5/2	+1		-5/2	+Base/2	1~2
+Reaver			0		0		-10		0		-10		*4		
+Reaver Rank		+2		+3		-5		+3		-10		+Base/2
+Brave			+3		+4		-20		+5		-10		*12
+Master Swd/Bow	+4		+7		-30		+6		-20		*14		
+Master Lnc/Axe	+4		+5		-30		+6		-20		*14		1~2
+Longbow			+1		0		-15		+3		-20		*6		2~4
+Longbow Rank	+2		+4		-5		+3		-5		+Base	2~4
+Standard		+		+		+		+		+		+		
+Standard		+		+		+		+		+		+		
+Standard		+		+		+		+		+		+		
+Standard		+		+		+		+		+		+	
+Stnd Magic Rank	+1		+3/2	-5		-		-5		+Base
+Wind			0		-2		+20		-				+4	
+Fire			+1		0		0		-		-5		-4
+Thunder			+1		+2		-20		-		-5		
+Dark Rank		+1		+5/2	-5		-		-5		+Base
+Additional Eff.	0		-3		0		-		0		

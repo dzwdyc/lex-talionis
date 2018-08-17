@@ -50,6 +50,7 @@ Unlock      			37 4 - - 2 30
 Escape      			129 5 - - 2 30
 ThiefEscape 			65 6 - - 2 30
 Unlock2         		37 4 [2] - 2 30
+Unlock3	    			37 4 [3] - 2 30
 AttackThiefEscape   	67 6 - - 2 30
 PursueIgnoreOther   	3 1 [other] - 2 20
 SoftGuardIgnoreOther	3 0 [other] - 0 20
